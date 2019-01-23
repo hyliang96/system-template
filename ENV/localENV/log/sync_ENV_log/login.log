@@ -379,3 +379,11 @@ _pull /home/hyliang/ENV/serverENV
 _pull /home/hyliang/ENV/shareENV
 _pull /home/hyliang/ENV/serverENV
 ======= login_sync end    2019-01-23 16:25:23 =======
+======= login_sync start  2019-01-23 16:37:22 =======
+/home/hyliang/ENV/shareENV is syncing now
+_pull /home/hyliang/ENV/serverENV
+======= login_sync end    2019-01-23 16:37:22 =======
+======= login_sync start  2019-01-23 16:45:10 =======
+/home/hyliang/ENV/shareENV is syncing now
+_pull /home/hyliang/ENV/serverENV
+======= login_sync end    2019-01-23 16:45:10 =======

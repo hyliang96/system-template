@@ -278,3 +278,11 @@ _push /home/hyliang/ENV/serverENV
 _push /home/hyliang/ENV/shareENV
 _push /home/hyliang/ENV/serverENV
 ======= logout_sync end    2019-01-23 16:25:19 =======
+======= logout_sync start 2019-01-23 16:37:18 =======
+_push /home/hyliang/ENV/shareENV
+_push /home/hyliang/ENV/serverENV
+======= logout_sync end    2019-01-23 16:37:23 =======
+======= logout_sync start 2019-01-23 16:45:07 =======
+_push /home/hyliang/ENV/shareENV
+_push /home/hyliang/ENV/serverENV
+======= logout_sync end    2019-01-23 16:45:11 =======
