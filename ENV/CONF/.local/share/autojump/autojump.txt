@@ -3,7 +3,6 @@
 55.6776436282	/home/hyliang/ENV/shareENV
 10.0	/home
 10.0	/home/hyliang/ENV/serverENV/local
-10.0	/home/hyliang/ENV/CONF/.local/share
 10.0	/home/hyliang/ENV/CONF/.ipython
 14.1421356237	/home/hyliang/ENV/CONF/.jupyter
 10.0	/home/hyliang/ENV/localENV/log/polipo
