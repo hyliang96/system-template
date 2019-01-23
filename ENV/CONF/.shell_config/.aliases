@@ -1,0 +1,50 @@
+#!/bin/bash
+echo local .bash_aliases
+
+[ -f $share_shell_config/.aliases ] && . $share_shell_config/.aliases
+
+# ------------------ 软件 ---------------------------
+
+
+# ------------------ 翻墙 ---------------------------
+if [ -f $server_script/fanqiang.sh  ]; then
+   	. $server_script/fanqiang.sh
+else
+	echo "\$server_script/fanqiang.sh not found; unable to 翻墙!"
+fi
+# dropbox loader
+# 安装使用教程：https://linux.cn/article-6814-1.html
+# 此软件使用前需先翻墙
+# alias dbx='$server_script/dropbox_uploader.sh'
+alias dbx='python2 $server_script/dropbox.py'
+
+alias nb='jupyter notebook'
+
+# ssh
+if [ "`uname -a | grep -E 'gpu[0-9] |gpu1[0-3] |cluster[1-4] '`" != "" ]; then
+    # 在gpu1-11，cluster1-4
+    alias ssh='ssh -F ~/.ssh/config_JUN1'
+    alias sshfs='sshfs -F ~/.ssh/config_JUN1'
+    alias scp='scp -r -F ~/.ssh/config_JUN1'
+    alias vssh='sub ~/.ssh/config_JUN1'
+else
+# elif [ "`hostname -i | grep 166.111.121.42`" != "" ]; then
+    # 在gpu>=14
+    alias ssh='ssh -F ~/.ssh/config_JUN2'
+    alias vssh='sub ~/.ssh/config_JUN2'
+    alias scp='scp -r -F ~/.ssh/config_JUN2'
+    alias sshfs='sshfs -F ~/.ssh/config_JUN2'
+# else
+#     alias vssh='sub ~/.ssh/config'
+fi
+alias sssh='cp -r ~/.ssh /home/${USER}/.ssh'
+
+
+
+fix_zsh_history()
+{
+    mv ~/.zsh_history ~/.zsh_history_bad
+    strings ~/.zsh_history_bad > ~/.zsh_history
+    fc -R ~/.zsh_history
+    rm ~/.zsh_history_bad
+}
