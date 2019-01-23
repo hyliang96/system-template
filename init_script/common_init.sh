@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /home/${USER}/init_script
 wget https://repo.continuum.io/archive/Anaconda3-2018.12-Linux-x86_64.sh
 bash Anaconda3-2018.12-Linux-x86_64.sh -p /home/${USER}/ENV/localENV/anaconda3 -b
 # 默认环境是python3.6，pip=pip3=pip3.7

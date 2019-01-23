@@ -1,4 +1,4 @@
-. /home/${USER}/mfs/server_conf/script_server_init/common_init.sh
+. /home/${USER}/init_script/common_init.sh
 
 pip install torch torchvision
 pip install tensorflow-gpu
