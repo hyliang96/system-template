@@ -2,6 +2,7 @@
 *.pyc
 anaconda*/
 conda/
+/trash/
 /init_script/Anaconda*
 /ENV/CONF/.local/share/autojump/autojump.*
 /ENV/CONF/.cache/*
