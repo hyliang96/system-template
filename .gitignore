@@ -1,0 +1,9 @@
+ENV/CONF/.cache/*
+ENV/CONF/.python_history
+ENV/CONF/.viminfo
+ENV/CONF/.z
+ENV/CONF/.zcompdump
+ENV/CONF/.zhistory
+ENV/CONF/.zsh_history
+ENV/CONF/.bash_history
+ENV/localENV/log/sync_ENV_log/*
