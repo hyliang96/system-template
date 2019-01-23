@@ -1,4 +1,5 @@
 *.zwc
+*.pyc
 anaconda*/
 conda/
 /init_script/Anaconda*
