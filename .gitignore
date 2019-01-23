@@ -1,5 +1,6 @@
 *.zwc
 anaconda*/
+conda/
 /init_script/Anaconda*
 /ENV/CONF/.local/share/autojump/autojump.*
 /ENV/CONF/.cache/*
