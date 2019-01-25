@@ -45,34 +45,23 @@ Bundle "tomasr/molokai"
 Bundle "klen/python-mode"
 " 自动加注释
 Bundle "hyliang96/nerdcommenter"
+" " 缩进提示
+" Plugin 'nathanaelkane/vim-indent-guides'
+" let g:indent_guides_enable_on_vim_startup = 1
+" let g:indent_guides_auto_colors = 0
+" let g:indent_guides_guide_size=1
+" let g:indent_guides_start_level=2
+" hi IndentGuidesEven    ctermbg=236
+" hi IndentGuidesOdd    ctermbg=236
+
 " 缩进线
 Plugin 'Yggdroot/indentLine'
-" Vim
-let g:indentLine_color_term = 239
 
-" GVim
-let g:indentLine_color_gui = '#A4E57E'
-
-" none X terminal
-let g:indentLine_color_tty_light = 7 " (default: 4)
-let g:indentLine_color_dark = 1 " (default: 2)
-
-" Background (Vim, GVim)
-let g:indentLine_bgcolor_term = 202
-let g:indentLine_bgcolor_gui = '#FF5F00'
-
-set conceallevel=1
-let g:indentLine_conceallevel=1
-" set expandtab
-" set tabstop=4
-" set shiftwidth=4
-" let g:indentLine_noConcealCursor = 0
-" let g:indentLine_color_term = 255
-" let g:indentLine_char = '|'
-" set conceallevel=1
-" let g:indentLine_conceallevel=1
+let g:indentLine_char = '⎸'
+let g:indentLine_color_term = 237
+let g:indentLine_enabled = 1
 
 if filereadable(expand("~/.vimrc.bundles.local"))
-  source ~/.vimrc.bundles.local
+    source ~/.vimrc.bundles.local
 endif
 filetype on
