@@ -1,1 +1,1 @@
-/home/hyliang/ENV/shareENV/app_config/.vim
+/home/hyliang/ENV/shareENV/app_config/vim/.vim
