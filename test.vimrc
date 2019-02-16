@@ -31,8 +31,6 @@ set novisualbell            " 关闭使用可视响铃代替呼叫
 set t_vb=                   " 置空错误铃声的终端代码
 " set showmatch               " 插入括号时，短暂地跳转到匹配的对应括号
 " set matchtime=2             " 短暂跳转到匹配括号的时间
-
-
 set magic                   " 设置魔术
 set hidden                  " 允许在有未保存的修改时切换缓冲区，此时的修改由 vim 负责保存
 set guioptions-=T           " 隐藏工具栏
