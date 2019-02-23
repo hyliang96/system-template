@@ -1,4 +1,5 @@
 #!/bin/bash
+# 一切shell，登出手动执行此文件
 
 echo .logout
 

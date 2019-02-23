@@ -1,11 +1,9 @@
 #!/usr/bin/zsh
 
+# 一切zsh使用，都加载之
+
 echo .zshenv
 
 [ -f ~/.env ] && . ~/.env
 
-if ! [[ $- == *i* ]]; then
-    echo 非交互模式
-    [ -f ~/.shell_config/.aliases ] &&  . ~/.shell_config/.aliases
-fi
 

@@ -1,11 +1,18 @@
 #!/bin/bash
 echo lcoal .bashrc
 
+# bash的交互 加载之
+
+# bash 的非登录式 交互，直接加载之
+# 即，在终端下，输入`bash`，开启一个新的bash窗口，则加载之
+
+# bash 的 登录式，加载~/.profile, 在其中  . ~/.bashrc
+
 [ -f ~/.env ] &&  . ~/.env
 [ -f $share_shell_config/.bashrc ] &&  . $share_shell_config/.bashrc
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-[ -f ~/.shell_config/.aliases ] &&  . ~/.shell_config/.aliases
+if ! [[ $- != *i* ]]; then
+    echo 交互模式
+    [ -f ~/.shell_config/.aliases ] &&  . ~/.shell_config/.aliases
+fi
+
