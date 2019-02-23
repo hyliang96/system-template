@@ -10,7 +10,7 @@ from pathlib import Path
 import argparse
 import json
 import numpy as np
-from tqdm import tqdm
+from tqdm import tqdmb
 import torch
 from torch.optim import SGD
 from torch.optim.lr_scheduler import CosineAnnealingLR
