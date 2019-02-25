@@ -9762,3 +9762,1384 @@ antigen
 [LOG][1550743103.2824790478] Return from hook antigen-apply with 0
 [LOG][1550743103.2826013565] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
 [LOG][1550743103.2826013565] Return from hook antigen with 0
+[WRN][1551083663.7964920998] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:266
+[WRN][1551083663.7964920998] -antigen-interactive-mode: file:file:file:shfunc:shfunc $_ANTIGEN_INTERACTIVE = 
+[WRN][1551083663.7967433929] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1572
+[WRN][1551083663.7967433929] -antigen-lock-init return code was 0
+[LOG][1551083663.7967870235] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1574
+[LOG][1551083663.7967870235] LOADED EXTENSION lock EXT
+[WRN][1551083663.8215448856] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1684
+[WRN][1551083663.8215448856] Init parallel extension PARALLEL
+[WRN][1551083663.8216400146] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:266
+[WRN][1551083663.8216400146] -antigen-interactive-mode: file:file:file:shfunc:shfunc:shfunc:eval:shfunc:shfunc $_ANTIGEN_INTERACTIVE = 
+[WRN][1551083663.8217136860] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1572
+[WRN][1551083663.8217136860] -antigen-parallel-init return code was 0
+[LOG][1551083663.8217539787] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1574
+[LOG][1551083663.8217539787] LOADED EXTENSION parallel EXT
+[WRN][1551083663.8217899799] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1692
+[WRN][1551083663.8217899799] Exec parallel extension PARALLEL
+[WRN][1551083663.8220450878] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:266
+[WRN][1551083663.8220450878] -antigen-interactive-mode: file:file:file:shfunc:shfunc:shfunc:eval:shfunc:shfunc $_ANTIGEN_INTERACTIVE = 
+[WRN][1551083663.8221039772] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1572
+[WRN][1551083663.8221039772] -antigen-defer-init return code was 0
+[LOG][1551083663.8221476078] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1574
+[LOG][1551083663.8221476078] LOADED EXTENSION defer EXT
+[WRN][1551083663.8296627998] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:266
+[WRN][1551083663.8296627998] -antigen-interactive-mode: file:file:file:shfunc:shfunc:shfunc:eval:shfunc:shfunc $_ANTIGEN_INTERACTIVE = 
+[WRN][1551083663.8299050331] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1572
+[WRN][1551083663.8299050331] -antigen-cache-init return code was 0
+[LOG][1551083663.8299546242] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1574
+[LOG][1551083663.8299546242] LOADED EXTENSION cache EXT
+[WRN][1551083663.8536570072] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.8536570072] Updated meta: target antigen mode once type pre called 1
+[WRN][1551083663.8537430763] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.8537430763] Processing hooks: antigen-lock
+[WRN][1551083663.8537824154] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.8537824154] Pre hook: antigen-lock use oh-my-zsh
+[LOG][1551083663.8538203239] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:4
+[LOG][1551083663.8538203239] antigen-lock called
+[WRN][1551083663.8538596630] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:15
+[WRN][1551083663.8538596630] Creating antigen-lock file at /home/hyliang/ENV/CONF/.antigen/.lock
+[WRN][1551083663.8696591854] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.8696591854] -antigen-hook-antigen use oh-my-zsh
+[WRN][1551083663.8900346756] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.8900346756] Updated meta: target antigen-bundle mode repeat type replace called 1
+[WRN][1551083663.8901779652] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.8901779652] Updated meta: target antigen-bundle mode repeat type pre called 1
+[WRN][1551083663.8902413845] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.8902413845] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.8902835846] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.8902835846] Pre hook: antigen-bundle-cached --loc=lib
+[WRN][1551083663.8903675079] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.8903675079] Replace hook: antigen-bundle-defer --loc=lib
+[WRN][1551083663.8904323578] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.8904323578] antigen-bundle-defer shortcircuited
+[LOG][1551083663.8905298710] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.8905298710] Return from hook antigen with 0
+[WRN][1551083663.9147593975] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9147593975] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9148416519] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9148416519] Processing hooks: antigen-lock
+[WRN][1551083663.9148905277] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9148905277] -antigen-hook-antigen bundle pip
+[WRN][1551083663.9150373936] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9150373936] Updated meta: target antigen-bundle mode repeat type replace called 2
+[WRN][1551083663.9151217937] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9151217937] Updated meta: target antigen-bundle mode repeat type pre called 2
+[WRN][1551083663.9151678085] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9151678085] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9152042866] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9152042866] Pre hook: antigen-bundle-cached pip
+[WRN][1551083663.9152700901] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9152700901] Replace hook: antigen-bundle-defer pip
+[WRN][1551083663.9153199196] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9153199196] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9153878689] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9153878689] Return from hook antigen with 0
+[WRN][1551083663.9155235291] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9155235291] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9155611992] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9155611992] Processing hooks: antigen-lock
+[WRN][1551083663.9156043530] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9156043530] -antigen-hook-antigen bundle svn-fast-info
+[WRN][1551083663.9157323837] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9157323837] Updated meta: target antigen-bundle mode repeat type replace called 3
+[WRN][1551083663.9158120155] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9158120155] Updated meta: target antigen-bundle mode repeat type pre called 3
+[WRN][1551083663.9158568382] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9158568382] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9158926010] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9158926010] Pre hook: antigen-bundle-cached svn-fast-info
+[WRN][1551083663.9159545898] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9159545898] Replace hook: antigen-bundle-defer svn-fast-info
+[WRN][1551083663.9160017967] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9160017967] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9160606861] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9160606861] Return from hook antigen with 0
+[WRN][1551083663.9161930084] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9161930084] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9162297249] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9162297249] Processing hooks: antigen-lock
+[WRN][1551083663.9162731171] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9162731171] -antigen-hook-antigen bundle colorize
+[WRN][1551083663.9163999557] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9163999557] Updated meta: target antigen-bundle mode repeat type replace called 4
+[WRN][1551083663.9164788723] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9164788723] Updated meta: target antigen-bundle mode repeat type pre called 4
+[WRN][1551083663.9165229797] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9165229797] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9165592194] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9165592194] Pre hook: antigen-bundle-cached colorize
+[WRN][1551083663.9166207314] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9166207314] Replace hook: antigen-bundle-defer colorize
+[WRN][1551083663.9166681767] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9166681767] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9167430401] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9167430401] Return from hook antigen with 0
+[WRN][1551083663.9168882370] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9168882370] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9169270992] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9169270992] Processing hooks: antigen-lock
+[WRN][1551083663.9169714451] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9169714451] -antigen-hook-antigen bundle github
+[WRN][1551083663.9170985222] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9170985222] Updated meta: target antigen-bundle mode repeat type replace called 5
+[WRN][1551083663.9171776772] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9171776772] Updated meta: target antigen-bundle mode repeat type pre called 5
+[WRN][1551083663.9172289371] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9172289371] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9172651768] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9172651768] Pre hook: antigen-bundle-cached github
+[WRN][1551083663.9173271656] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9173271656] Replace hook: antigen-bundle-defer github
+[WRN][1551083663.9173748493] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9173748493] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9174327850] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9174327850] Return from hook antigen with 0
+[WRN][1551083663.9175477028] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9175477028] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9175846577] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9175846577] Processing hooks: antigen-lock
+[WRN][1551083663.9176278114] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9176278114] -antigen-hook-antigen bundle python
+[WRN][1551083663.9177525043] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9177525043] Updated meta: target antigen-bundle mode repeat type replace called 6
+[WRN][1551083663.9178295135] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9178295135] Updated meta: target antigen-bundle mode repeat type pre called 6
+[WRN][1551083663.9178740978] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9178740978] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9179098606] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9179098606] Pre hook: antigen-bundle-cached python
+[WRN][1551083663.9179706573] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9179706573] Replace hook: antigen-bundle-defer python
+[WRN][1551083663.9180178642] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9180178642] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9180760384] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9180760384] Return from hook antigen with 0
+[WRN][1551083663.9181940556] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9181940556] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9182298183] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9182298183] Processing hooks: antigen-lock
+[WRN][1551083663.9182729721] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9182729721] -antigen-hook-antigen bundle rupa/z z.sh
+[WRN][1551083663.9183988571] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9183988571] Updated meta: target antigen-bundle mode repeat type replace called 7
+[WRN][1551083663.9184777737] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9184777737] Updated meta: target antigen-bundle mode repeat type pre called 7
+[WRN][1551083663.9185225964] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9185225964] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9185583591] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9185583591] Pre hook: antigen-bundle-cached rupa/z z.sh
+[WRN][1551083663.9186208248] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9186208248] Replace hook: antigen-bundle-defer rupa/z z.sh
+[WRN][1551083663.9186685085] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9186685085] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9187262058] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9187262058] Return from hook antigen with 0
+[WRN][1551083663.9188613892] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9188613892] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9188971519] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9188971519] Processing hooks: antigen-lock
+[WRN][1551083663.9189438820] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9189438820] -antigen-hook-antigen bundle zsh-users/zsh-autosuggestions
+[WRN][1551083663.9190704823] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9190704823] Updated meta: target antigen-bundle mode repeat type replace called 8
+[WRN][1551083663.9191491604] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9191491604] Updated meta: target antigen-bundle mode repeat type pre called 8
+[WRN][1551083663.9191932678] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9191932678] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9192297459] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9192297459] Pre hook: antigen-bundle-cached zsh-users/zsh-autosuggestions
+[WRN][1551083663.9192934036] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9192934036] Replace hook: antigen-bundle-defer zsh-users/zsh-autosuggestions
+[WRN][1551083663.9193413258] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9193413258] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9193997383] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9193997383] Return from hook antigen with 0
+[WRN][1551083663.9195315838] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9195315838] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9195683002] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9195683002] Processing hooks: antigen-lock
+[WRN][1551083663.9196114540] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9196114540] -antigen-hook-antigen bundle zsh-users/zsh-completions
+[WRN][1551083663.9197368622] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9197368622] Updated meta: target antigen-bundle mode repeat type replace called 9
+[WRN][1551083663.9198150635] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9198150635] Updated meta: target antigen-bundle mode repeat type pre called 9
+[WRN][1551083663.9198594093] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9198594093] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9198954105] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9198954105] Pre hook: antigen-bundle-cached zsh-users/zsh-completions
+[WRN][1551083663.9199581146] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9199581146] Replace hook: antigen-bundle-defer zsh-users/zsh-completions
+[WRN][1551083663.9200062752] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9200062752] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9200639725] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9200639725] Return from hook antigen with 0
+[WRN][1551083663.9201948643] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9201948643] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9202308655] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9202308655] Processing hooks: antigen-lock
+[WRN][1551083663.9202737808] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9202737808] -antigen-hook-antigen bundle Vifon/deer
+[WRN][1551083663.9204010963] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9204010963] Updated meta: target antigen-bundle mode repeat type replace called 10
+[WRN][1551083663.9204812050] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9204812050] Updated meta: target antigen-bundle mode repeat type pre called 10
+[WRN][1551083663.9205255508] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9205255508] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9205615520] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9205615520] Pre hook: antigen-bundle-cached Vifon/deer
+[WRN][1551083663.9206280708] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9206280708] Replace hook: antigen-bundle-defer Vifon/deer
+[WRN][1551083663.9206764698] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9206764698] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9207353592] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9207353592] Return from hook antigen with 0
+[WRN][1551083663.9208822250] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9208822250] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9209208488] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9209208488] Processing hooks: antigen-lock
+[WRN][1551083663.9209640026] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9209640026] -antigen-hook-antigen bundle willghatch/zsh-cdr
+[WRN][1551083663.9210901260] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9210901260] Updated meta: target antigen-bundle mode repeat type replace called 11
+[WRN][1551083663.9211695194] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9211695194] Updated meta: target antigen-bundle mode repeat type pre called 11
+[WRN][1551083663.9212136269] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9212136269] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9212491512] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9212491512] Pre hook: antigen-bundle-cached willghatch/zsh-cdr
+[WRN][1551083663.9213118553] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9213118553] Replace hook: antigen-bundle-defer willghatch/zsh-cdr
+[WRN][1551083663.9213604927] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9213604927] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9214191437] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9214191437] Return from hook antigen with 0
+[WRN][1551083663.9215896130] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9215896130] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9216258526] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9216258526] Processing hooks: antigen-lock
+[WRN][1551083663.9216682911] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9216682911] -antigen-hook-antigen theme agnoster
+[WRN][1551083663.9375884533] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9375884533] Updated meta: target antigen-bundle mode repeat type replace called 12
+[WRN][1551083663.9377305508] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9377305508] Updated meta: target antigen-bundle mode repeat type pre called 12
+[WRN][1551083663.9377932549] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9377932549] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9378354549] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9378354549] Pre hook: antigen-bundle-cached --loc=themes/agnoster --btype=theme
+[WRN][1551083663.9379222393] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9379222393] Replace hook: antigen-bundle-defer --loc=themes/agnoster --btype=theme
+[WRN][1551083663.9379866123] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9379866123] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9380860329] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9380860329] Return from hook antigen with 0
+[WRN][1551083663.9390933514] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9390933514] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9391400814] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9391400814] Processing hooks: antigen-lock
+[WRN][1551083663.9391889572] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9391889572] -antigen-hook-antigen bundle zsh-users/zsh-syntax-highlighting
+[WRN][1551083663.9393343925] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9393343925] Updated meta: target antigen-bundle mode repeat type replace called 13
+[WRN][1551083663.9394183159] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9394183159] Updated meta: target antigen-bundle mode repeat type pre called 13
+[WRN][1551083663.9394645691] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9394645691] Processing hooks: antigen-bundle-defer antigen-bundle-cached
+[WRN][1551083663.9395177364] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9395177364] Pre hook: antigen-bundle-cached zsh-users/zsh-syntax-highlighting
+[WRN][1551083663.9395861626] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9395861626] Replace hook: antigen-bundle-defer zsh-users/zsh-syntax-highlighting
+[WRN][1551083663.9396414757] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1500
+[WRN][1551083663.9396414757] antigen-bundle-defer shortcircuited
+[LOG][1551083663.9397046566] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9397046566] Return from hook antigen with 0
+[WRN][1551083663.9398229122] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083663.9398229122] Ignoring hook due to mode once: antigen-lock
+[WRN][1551083663.9398596287] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9398596287] Processing hooks: antigen-lock
+[WRN][1551083663.9399039745] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9399039745] -antigen-hook-antigen apply
+[WRN][1551083663.9400444031] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9400444031] Updated meta: target antigen-apply mode once type post called 1
+[WRN][1551083663.9401271343] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9401271343] Updated meta: target antigen-apply mode once type pre called 1
+[WRN][1551083663.9402043819] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9402043819] Updated meta: target antigen-apply mode once type replace called 1
+[WRN][1551083663.9402823448] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9402823448] Updated meta: target antigen-apply mode once type pre called 1
+[WRN][1551083663.9403567314] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9403567314] Updated meta: target antigen-apply mode once type post called 1
+[WRN][1551083663.9404017925] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9404017925] Processing hooks: antigen-apply-lock antigen-apply-parallel antigen-apply-parallel-execute antigen-apply-defer antigen-apply-cached
+[WRN][1551083663.9404404163] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9404404163] Pre hook: antigen-apply-parallel
+[WRN][1551083663.9404804707] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:53
+[WRN][1551083663.9404804707] Parallel pre-apply PARALLEL PRE-APPLY
+[WRN][1551083663.9406023026] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9406023026] Pre hook: antigen-apply-defer
+[WRN][1551083663.9406418800] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:10
+[WRN][1551083663.9406418800] Defer pre-apply DEFER PRE-APPLY
+[LOG][1551083663.9407727718] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9407727718] Processing deferred bundle: --loc=lib DEFER
+[WRN][1551083663.9409191608] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9409191608] Updated meta: target antigen-bundle mode repeat type pre called 14
+[WRN][1551083663.9410486221] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9410486221] Updated meta: target antigen-bundle mode repeat type replace called 1
+[WRN][1551083663.9411225319] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9411225319] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9411733150] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9411733150] Pre hook: antigen-bundle-cached --loc=lib
+[WRN][1551083663.9412620068] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9412620068] Replace hook: antigen-bundle-parallel --loc=lib
+[TRA][1551083663.9413099289] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9413099289] antigen-bundle-parallel: --loc=lib PARALLEL
+[TRA][1551083663.9413099289] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9413809776] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9413809776] Replaced hooked function.
+[LOG][1551083663.9414339066] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9414339066] Return from hook antigen-bundle with 0
+[LOG][1551083663.9414911270] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9414911270] Processing deferred bundle: pip DEFER
+[WRN][1551083663.9416141510] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9416141510] Updated meta: target antigen-bundle mode repeat type pre called 15
+[WRN][1551083663.9417076111] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9417076111] Updated meta: target antigen-bundle mode repeat type replace called 2
+[WRN][1551083663.9417638779] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9417638779] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9418115616] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9418115616] Pre hook: antigen-bundle-cached pip
+[WRN][1551083663.9418931007] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9418931007] Replace hook: antigen-bundle-parallel pip
+[TRA][1551083663.9419357777] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9419357777] antigen-bundle-parallel: pip PARALLEL
+[TRA][1551083663.9419357777] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9419975281] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9419975281] Replaced hooked function.
+[LOG][1551083663.9420483112] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9420483112] Return from hook antigen-bundle with 0
+[LOG][1551083663.9421043396] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9421043396] Processing deferred bundle: svn-fast-info DEFER
+[WRN][1551083663.9422221184] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9422221184] Updated meta: target antigen-bundle mode repeat type pre called 16
+[WRN][1551083663.9423170090] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9423170090] Updated meta: target antigen-bundle mode repeat type replace called 3
+[WRN][1551083663.9423727989] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9423727989] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9424202442] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9424202442] Pre hook: antigen-bundle-cached svn-fast-info
+[WRN][1551083663.9425003529] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9425003529] Replace hook: antigen-bundle-parallel svn-fast-info
+[TRA][1551083663.9425425529] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9425425529] antigen-bundle-parallel: svn-fast-info PARALLEL
+[TRA][1551083663.9425425529] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9426043034] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9426043034] Replaced hooked function.
+[LOG][1551083663.9426615238] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9426615238] Return from hook antigen-bundle with 0
+[LOG][1551083663.9427177906] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9427177906] Processing deferred bundle: colorize DEFER
+[WRN][1551083663.9428348541] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9428348541] Updated meta: target antigen-bundle mode repeat type pre called 17
+[WRN][1551083663.9429295063] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9429295063] Updated meta: target antigen-bundle mode repeat type replace called 4
+[WRN][1551083663.9429848194] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9429848194] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9430327415] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9430327415] Pre hook: antigen-bundle-cached colorize
+[WRN][1551083663.9431121349] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9431121349] Replace hook: antigen-bundle-parallel colorize
+[TRA][1551083663.9431550503] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9431550503] antigen-bundle-parallel: colorize PARALLEL
+[TRA][1551083663.9431550503] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9432158470] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9432158470] Replaced hooked function.
+[LOG][1551083663.9432654381] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9432654381] Return from hook antigen-bundle with 0
+[LOG][1551083663.9433197975] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9433197975] Processing deferred bundle: github DEFER
+[WRN][1551083663.9434392452] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9434392452] Updated meta: target antigen-bundle mode repeat type pre called 18
+[WRN][1551083663.9435436726] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9435436726] Updated meta: target antigen-bundle mode repeat type replace called 5
+[WRN][1551083663.9435985088] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9435985088] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9436445236] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9436445236] Pre hook: antigen-bundle-cached github
+[WRN][1551083663.9437232018] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9437232018] Replace hook: antigen-bundle-parallel github
+[TRA][1551083663.9437649250] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9437649250] antigen-bundle-parallel: github PARALLEL
+[TRA][1551083663.9437649250] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9438271523] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9438271523] Replaced hooked function.
+[LOG][1551083663.9438769817] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9438769817] Return from hook antigen-bundle with 0
+[LOG][1551083663.9439332485] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9439332485] Processing deferred bundle: python DEFER
+[WRN][1551083663.9440469742] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9440469742] Updated meta: target antigen-bundle mode repeat type pre called 19
+[WRN][1551083663.9441373348] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9441373348] Updated meta: target antigen-bundle mode repeat type replace called 6
+[WRN][1551083663.9441924095] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9441924095] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9442424774] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9442424774] Pre hook: antigen-bundle-cached python
+[WRN][1551083663.9443206787] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9443206787] Replace hook: antigen-bundle-parallel python
+[TRA][1551083663.9443633556] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9443633556] antigen-bundle-parallel: python PARALLEL
+[TRA][1551083663.9443633556] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9444253445] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9444253445] Replaced hooked function.
+[LOG][1551083663.9444749355] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9444749355] Return from hook antigen-bundle with 0
+[LOG][1551083663.9445297718] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9445297718] Processing deferred bundle: rupa/z z.sh DEFER
+[WRN][1551083663.9446434975] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9446434975] Updated meta: target antigen-bundle mode repeat type pre called 20
+[WRN][1551083663.9447319508] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9447319508] Updated meta: target antigen-bundle mode repeat type replace called 7
+[WRN][1551083663.9447860718] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9447860718] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9448320866] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9448320866] Pre hook: antigen-bundle-cached rupa/z z.sh
+[WRN][1551083663.9449265003] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9449265003] Replace hook: antigen-bundle-parallel rupa/z z.sh
+[TRA][1551083663.9449696541] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9449696541] antigen-bundle-parallel: rupa/z z.sh PARALLEL
+[TRA][1551083663.9449696541] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9450316429] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9450316429] Replaced hooked function.
+[LOG][1551083663.9450817108] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9450817108] Return from hook antigen-bundle with 0
+[LOG][1551083663.9451360703] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9451360703] Processing deferred bundle: zsh-users/zsh-autosuggestions DEFER
+[WRN][1551083663.9452521801] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9452521801] Updated meta: target antigen-bundle mode repeat type pre called 21
+[WRN][1551083663.9453427792] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9453427792] Updated meta: target antigen-bundle mode repeat type replace called 8
+[WRN][1551083663.9453978539] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9453978539] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9454450607] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9454450607] Pre hook: antigen-bundle-cached zsh-users/zsh-autosuggestions
+[WRN][1551083663.9455308914] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9455308914] Replace hook: antigen-bundle-parallel zsh-users/zsh-autosuggestions
+[TRA][1551083663.9455742836] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9455742836] antigen-bundle-parallel: zsh-users/zsh-autosuggestions PARALLEL
+[TRA][1551083663.9455742836] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9456446171] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9456446171] Replaced hooked function.
+[LOG][1551083663.9456930161] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9456930161] Return from hook antigen-bundle with 0
+[LOG][1551083663.9457480907] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9457480907] Processing deferred bundle: zsh-users/zsh-completions DEFER
+[WRN][1551083663.9458639622] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9458639622] Updated meta: target antigen-bundle mode repeat type pre called 22
+[WRN][1551083663.9459545612] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9459545612] Updated meta: target antigen-bundle mode repeat type replace called 9
+[WRN][1551083663.9460091591] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9460091591] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9460554123] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9460554123] Pre hook: antigen-bundle-cached zsh-users/zsh-completions
+[WRN][1551083663.9461352825] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9461352825] Replace hook: antigen-bundle-parallel zsh-users/zsh-completions
+[TRA][1551083663.9461777210] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9461777210] antigen-bundle-parallel: zsh-users/zsh-completions PARALLEL
+[TRA][1551083663.9461777210] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9462430477] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9462430477] Replaced hooked function.
+[LOG][1551083663.9462907314] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9462907314] Return from hook antigen-bundle with 0
+[LOG][1551083663.9463496208] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9463496208] Processing deferred bundle: Vifon/deer DEFER
+[WRN][1551083663.9464766979] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9464766979] Updated meta: target antigen-bundle mode repeat type pre called 23
+[WRN][1551083663.9465687275] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9465687275] Updated meta: target antigen-bundle mode repeat type replace called 10
+[WRN][1551083663.9466235638] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9466235638] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9466702938] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9466702938] Pre hook: antigen-bundle-cached Vifon/deer
+[WRN][1551083663.9467506409] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9467506409] Replace hook: antigen-bundle-parallel Vifon/deer
+[TRA][1551083663.9467928410] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9467928410] antigen-bundle-parallel: Vifon/deer PARALLEL
+[TRA][1551083663.9467928410] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9468548298] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9468548298] Replaced hooked function.
+[LOG][1551083663.9469053745] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9469053745] Return from hook antigen-bundle with 0
+[LOG][1551083663.9469604492] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9469604492] Processing deferred bundle: willghatch/zsh-cdr DEFER
+[WRN][1551083663.9470849037] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9470849037] Updated meta: target antigen-bundle mode repeat type pre called 24
+[WRN][1551083663.9471833706] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9471833706] Updated meta: target antigen-bundle mode repeat type replace called 11
+[WRN][1551083663.9472384453] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9472384453] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9472854137] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9472854137] Pre hook: antigen-bundle-cached willghatch/zsh-cdr
+[WRN][1551083663.9473669529] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9473669529] Replace hook: antigen-bundle-parallel willghatch/zsh-cdr
+[TRA][1551083663.9474098682] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9474098682] antigen-bundle-parallel: willghatch/zsh-cdr PARALLEL
+[TRA][1551083663.9474098682] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9474718571] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9474718571] Replaced hooked function.
+[LOG][1551083663.9475317001] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9475317001] Return from hook antigen-bundle with 0
+[LOG][1551083663.9475870132] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9475870132] Processing deferred bundle: --loc=themes/agnoster --btype=theme DEFER
+[WRN][1551083663.9477045536] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9477045536] Updated meta: target antigen-bundle mode repeat type pre called 25
+[WRN][1551083663.9477946758] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9477946758] Updated meta: target antigen-bundle mode repeat type replace called 12
+[WRN][1551083663.9478504658] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9478504658] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9478976727] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9478976727] Pre hook: antigen-bundle-cached --loc=themes/agnoster --btype=theme
+[WRN][1551083663.9479861259] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9479861259] Replace hook: antigen-bundle-parallel --loc=themes/agnoster --btype=theme
+[TRA][1551083663.9480297565] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9480297565] antigen-bundle-parallel: --loc=themes/agnoster --btype=theme PARALLEL
+[TRA][1551083663.9480297565] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9480960369] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9480960369] Replaced hooked function.
+[LOG][1551083663.9481439590] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9481439590] Return from hook antigen-bundle with 0
+[LOG][1551083663.9481995106] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:16
+[LOG][1551083663.9481995106] Processing deferred bundle: zsh-users/zsh-syntax-highlighting DEFER
+[WRN][1551083663.9483156204] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9483156204] Updated meta: target antigen-bundle mode repeat type pre called 26
+[WRN][1551083663.9484066963] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9484066963] Updated meta: target antigen-bundle mode repeat type replace called 13
+[WRN][1551083663.9484620094] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9484620094] Processing hooks: antigen-bundle-cached antigen-bundle-parallel
+[WRN][1551083663.9485125542] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9485125542] Pre hook: antigen-bundle-cached zsh-users/zsh-syntax-highlighting
+[WRN][1551083663.9486000538] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9486000538] Replace hook: antigen-bundle-parallel zsh-users/zsh-syntax-highlighting
+[TRA][1551083663.9486432076] /home/hyliang/ENV/shareENV/shell_config/.zshrc:5
+[TRA][1551083663.9486432076] antigen-bundle-parallel: zsh-users/zsh-syntax-highlighting PARALLEL
+[TRA][1551083663.9486432076] TRACE
+antigen-bundle-parallel
+-antigen-hook-handler
+antigen-bundle
+antigen-apply-defer
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9487085342] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9487085342] Replaced hooked function.
+[LOG][1551083663.9487562180] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9487562180] Return from hook antigen-bundle with 0
+[WRN][1551083663.9608807564] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9608807564] Replace hook: antigen-apply-parallel-execute
+[WRN][1551083663.9609906673] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:65
+[WRN][1551083663.9609906673] Parallel replace-apply PARALLEL REPLACE-APPLY
+[WRN][1551083663.9611275196] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:4
+[WRN][1551083663.9611275196] Parallel antigen-bundle-parallel-execute PARALLEL
+[WRN][1551083663.9611778259] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:8
+[WRN][1551083663.9611778259] Gonna install in parallel 13 bundles. PARALLEL
+[WRN][1551083663.9612300396] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:10
+[WRN][1551083663.9612300396] --loc=lib pip svn-fast-info colorize github python rupa/z z.sh zsh-users/zsh-autosuggestions zsh-users/zsh-completions Vifon/deer willghatch/zsh-cdr --loc=themes/agnoster --btype=theme zsh-users/zsh-syntax-highlighting PARALLEL
+[WRN][1551083663.9617013931] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9617013931] Bundle robbyrussell/oh-my-zsh already cloned locally. PARALLEL
+[WRN][1551083663.9620795250] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9620795250] Bundle robbyrussell/oh-my-zsh already cloned locally. PARALLEL
+[WRN][1551083663.9624452591] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9624452591] Bundle robbyrussell/oh-my-zsh already cloned locally. PARALLEL
+[WRN][1551083663.9628045559] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9628045559] Bundle robbyrussell/oh-my-zsh already cloned locally. PARALLEL
+[WRN][1551083663.9631612301] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9631612301] Bundle robbyrussell/oh-my-zsh already cloned locally. PARALLEL
+[WRN][1551083663.9635393620] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9635393620] Bundle robbyrussell/oh-my-zsh already cloned locally. PARALLEL
+[WRN][1551083663.9639410973] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9639410973] Bundle rupa/z already cloned locally. PARALLEL
+[WRN][1551083663.9643132687] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9643132687] Bundle zsh-users/zsh-autosuggestions already cloned locally. PARALLEL
+[WRN][1551083663.9646742344] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9646742344] Bundle zsh-users/zsh-completions already cloned locally. PARALLEL
+[WRN][1551083663.9650330544] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9650330544] Bundle Vifon/deer already cloned locally. PARALLEL
+[WRN][1551083663.9653890133] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9653890133] Bundle willghatch/zsh-cdr already cloned locally. PARALLEL
+[WRN][1551083663.9657490253] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9657490253] Bundle robbyrussell/oh-my-zsh already cloned locally. PARALLEL
+[WRN][1551083663.9661266804] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:24
+[WRN][1551083663.9661266804] Bundle zsh-users/zsh-syntax-highlighting already cloned locally. PARALLEL
+[WRN][1551083663.9663438797] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9663438797] Updated meta: target antigen-bundle mode repeat type pre called 27
+[WRN][1551083663.9664080143] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9664080143] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9664490223] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9664490223] Pre hook: antigen-bundle-cached --loc=lib
+[WRN][1551083663.9665157795] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9665157795] -antigen-hook-antigen-bundle --loc=lib
+[TRA][1551083663.9665622711] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9665622711] Called antigen-bundle with --loc=lib BUNDLE
+[TRA][1551083663.9665622711] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9672615528] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9672615528] Updated meta: target -antigen-load-env mode repeat type replace called 1
+[WRN][1551083663.9673297405] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9673297405] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9674034119] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9674034119] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh btype plugin url https://github.com/robbyrussell/oh-my-zsh.git loc lib name robbyrussell/oh-my-zsh make_local_clone true
+[WRN][1551083663.9675123692] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9675123692] Replaced hooked function.
+[LOG][1551083663.9675590992] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9675590992] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9677572250] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9677572250] Updated meta: target -antigen-load-source mode repeat type replace called 1
+[WRN][1551083663.9678235054] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9678235054] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9679069519] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9679069519] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/bzr.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/clipboard.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/compfix.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/completion.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/correction.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/diagnostics.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/directories.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/functions.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/git.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/grep.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/history.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/key-bindings.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/misc.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/nvm.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/prompt_info_functions.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/spectrum.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/termsupport.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/theme-and-appearance.zsh
+[WRN][1551083663.9680554867] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9680554867] Replaced hooked function.
+[LOG][1551083663.9681036472] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9681036472] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9681847095] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9681847095] Return from hook antigen-bundle with 0
+[WRN][1551083663.9683222771] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9683222771] Updated meta: target antigen-bundle mode repeat type pre called 28
+[WRN][1551083663.9683735371] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9683735371] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9684128761] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9684128761] Pre hook: antigen-bundle-cached pip
+[WRN][1551083663.9684741497] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9684741497] -antigen-hook-antigen-bundle pip
+[TRA][1551083663.9685144424] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9685144424] Called antigen-bundle with pip BUNDLE
+[TRA][1551083663.9685144424] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9690980911] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9690980911] Updated meta: target -antigen-load-env mode repeat type replace called 2
+[WRN][1551083663.9691624641] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9691624641] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9692327976] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9692327976] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh btype plugin url https://github.com/robbyrussell/oh-my-zsh.git loc plugins/pip name robbyrussell/oh-my-zsh make_local_clone true
+[WRN][1551083663.9693281651] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9693281651] Replaced hooked function.
+[LOG][1551083663.9693722725] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9693722725] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9695158005] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9695158005] Updated meta: target -antigen-load-source mode repeat type replace called 2
+[WRN][1551083663.9695804119] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9695804119] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9696414471] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9696414471] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip/pip.plugin.zsh
+[WRN][1551083663.9697022438] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9697022438] Replaced hooked function.
+[LOG][1551083663.9697449207] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9697449207] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9698224068] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9698224068] Return from hook antigen-bundle with 0
+[WRN][1551083663.9699585438] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9699585438] Updated meta: target antigen-bundle mode repeat type pre called 29
+[WRN][1551083663.9700078964] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9700078964] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9700460434] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9700460434] Pre hook: antigen-bundle-cached svn-fast-info
+[WRN][1551083663.9701116085] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9701116085] -antigen-hook-antigen-bundle svn-fast-info
+[TRA][1551083663.9701523781] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9701523781] Called antigen-bundle with svn-fast-info BUNDLE
+[TRA][1551083663.9701523781] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9707162380] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9707162380] Updated meta: target -antigen-load-env mode repeat type replace called 3
+[WRN][1551083663.9707791805] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9707791805] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9708483219] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9708483219] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh btype plugin url https://github.com/robbyrussell/oh-my-zsh.git loc plugins/svn-fast-info name robbyrussell/oh-my-zsh make_local_clone true
+[WRN][1551083663.9709436893] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9709436893] Replaced hooked function.
+[LOG][1551083663.9709877968] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9709877968] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9711313248] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9711313248] Updated meta: target -antigen-load-source mode repeat type replace called 3
+[WRN][1551083663.9711873531] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9711873531] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9712457657] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9712457657] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/svn-fast-info/svn-fast-info.plugin.zsh
+[WRN][1551083663.9713053703] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9713053703] Replaced hooked function.
+[LOG][1551083663.9713480473] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9713480473] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9714272022] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9714272022] Return from hook antigen-bundle with 0
+[WRN][1551083663.9715769291] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9715769291] Updated meta: target antigen-bundle mode repeat type pre called 30
+[WRN][1551083663.9716267586] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9716267586] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9716649055] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9716649055] Pre hook: antigen-bundle-cached colorize
+[WRN][1551083663.9717259407] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9717259407] -antigen-hook-antigen-bundle colorize
+[TRA][1551083663.9717657566] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9717657566] Called antigen-bundle with colorize BUNDLE
+[TRA][1551083663.9717657566] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9723243713] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9723243713] Updated meta: target -antigen-load-env mode repeat type replace called 4
+[WRN][1551083663.9723882675] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9723882675] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9724624157] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9724624157] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh btype plugin url https://github.com/robbyrussell/oh-my-zsh.git loc plugins/colorize name robbyrussell/oh-my-zsh make_local_clone true
+[WRN][1551083663.9725606441] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9725606441] Replaced hooked function.
+[LOG][1551083663.9726047516] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9726047516] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9727501869] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9727501869] Updated meta: target -antigen-load-source mode repeat type replace called 4
+[WRN][1551083663.9728069305] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9728069305] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9809873104] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9809873104] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/colorize/colorize.plugin.zsh
+[WRN][1551083663.9810857773] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9810857773] Replaced hooked function.
+[LOG][1551083663.9811332226] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9811332226] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9812264442] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9812264442] Return from hook antigen-bundle with 0
+[WRN][1551083663.9813771248] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9813771248] Updated meta: target antigen-bundle mode repeat type pre called 31
+[WRN][1551083663.9814305305] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9814305305] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9814705849] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9814705849] Pre hook: antigen-bundle-cached github
+[WRN][1551083663.9815332890] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9815332890] -antigen-hook-antigen-bundle github
+[TRA][1551083663.9815745354] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9815745354] Called antigen-bundle with github BUNDLE
+[TRA][1551083663.9815745354] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9821703434] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9821703434] Updated meta: target -antigen-load-env mode repeat type replace called 5
+[WRN][1551083663.9822354317] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9822354317] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9823052883] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9823052883] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh btype plugin url https://github.com/robbyrussell/oh-my-zsh.git loc plugins/github name robbyrussell/oh-my-zsh make_local_clone true
+[WRN][1551083663.9824023247] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9824023247] Replaced hooked function.
+[LOG][1551083663.9824466705] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9824466705] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9825911522] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9825911522] Updated meta: target -antigen-load-source mode repeat type replace called 5
+[WRN][1551083663.9826481342] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9826481342] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9827129841] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9827129841] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/github/github.plugin.zsh
+[WRN][1551083663.9827728271] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9827728271] Replaced hooked function.
+[LOG][1551083663.9828150272] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9828150272] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9828937054] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9828937054] Return from hook antigen-bundle with 0
+[WRN][1551083663.9830303192] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9830303192] Updated meta: target antigen-bundle mode repeat type pre called 32
+[WRN][1551083663.9830818176] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9830818176] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9831209183] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9831209183] Pre hook: antigen-bundle-cached python
+[WRN][1551083663.9831821918] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9831821918] -antigen-hook-antigen-bundle python
+[TRA][1551083663.9832234383] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9832234383] Called antigen-bundle with python BUNDLE
+[TRA][1551083663.9832234383] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9838001728] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9838001728] Updated meta: target -antigen-load-env mode repeat type replace called 6
+[WRN][1551083663.9838650227] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9838650227] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9839346409] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9839346409] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh btype plugin url https://github.com/robbyrussell/oh-my-zsh.git loc plugins/python name robbyrussell/oh-my-zsh make_local_clone true
+[WRN][1551083663.9840307236] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9840307236] Replaced hooked function.
+[LOG][1551083663.9840755463] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9840755463] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9842200279] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9842200279] Updated meta: target -antigen-load-source mode repeat type replace called 6
+[WRN][1551083663.9842770100] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9842770100] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9843366146] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9843366146] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/python/python.plugin.zsh
+[WRN][1551083663.9843964577] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9843964577] Replaced hooked function.
+[LOG][1551083663.9844388962] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9844388962] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9845180511] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9845180511] Return from hook antigen-bundle with 0
+[WRN][1551083663.9846558571] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9846558571] Updated meta: target antigen-bundle mode repeat type pre called 33
+[WRN][1551083663.9847056866] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9847056866] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9847488403] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9847488403] Pre hook: antigen-bundle-cached rupa/z z.sh
+[WRN][1551083663.9848113060] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9848113060] -antigen-hook-antigen-bundle rupa/z z.sh
+[TRA][1551083663.9848713875] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9848713875] Called antigen-bundle with rupa/z z.sh BUNDLE
+[TRA][1551083663.9848713875] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9853818417] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9853818417] Updated meta: target -antigen-load-env mode repeat type replace called 7
+[WRN][1551083663.9854521751] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9854521751] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9855253696] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9855253696] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/rupa/z btype plugin url https://github.com/rupa/z.git loc z.sh name rupa/z make_local_clone true
+[WRN][1551083663.9856600761] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9856600761] Replaced hooked function.
+[LOG][1551083663.9857170582] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9857170582] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9858610630] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9858610630] Updated meta: target -antigen-load-source mode repeat type replace called 7
+[WRN][1551083663.9859223366] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9859223366] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9859809875] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9859809875] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/rupa/z/z.sh
+[WRN][1551083663.9860460758] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9860460758] Replaced hooked function.
+[LOG][1551083663.9860904217] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9860904217] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9861710072] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9861710072] Return from hook antigen-bundle with 0
+[WRN][1551083663.9863085747] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9863085747] Updated meta: target antigen-bundle mode repeat type pre called 34
+[WRN][1551083663.9863581657] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9863581657] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9863970280] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9863970280] Pre hook: antigen-bundle-cached zsh-users/zsh-autosuggestions
+[WRN][1551083663.9864594936] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9864594936] -antigen-hook-antigen-bundle zsh-users/zsh-autosuggestions
+[TRA][1551083663.9865002632] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9865002632] Called antigen-bundle with zsh-users/zsh-autosuggestions BUNDLE
+[TRA][1551083663.9865002632] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9870805740] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9870805740] Updated meta: target -antigen-load-env mode repeat type replace called 8
+[WRN][1551083663.9871449471] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9871449471] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9872210026] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9872210026] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-autosuggestions btype plugin url https://github.com/zsh-users/zsh-autosuggestions.git loc / name zsh-users/zsh-autosuggestions make_local_clone true
+[WRN][1551083663.9873201847] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9873201847] Replaced hooked function.
+[LOG][1551083663.9873647690] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9873647690] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9875209332] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9875209332] Updated meta: target -antigen-load-source mode repeat type replace called 8
+[WRN][1551083663.9875783920] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9875783920] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9876370430] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9876370430] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-autosuggestions///zsh-autosuggestions.plugin.zsh
+[WRN][1551083663.9876973629] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9876973629] Replaced hooked function.
+[LOG][1551083663.9877402782] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9877402782] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9878194332] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9878194332] Return from hook antigen-bundle with 0
+[WRN][1551083663.9879574776] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9879574776] Updated meta: target antigen-bundle mode repeat type pre called 35
+[WRN][1551083663.9880077839] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9880077839] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9880466461] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9880466461] Pre hook: antigen-bundle-cached zsh-users/zsh-completions
+[WRN][1551083663.9881098270] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9881098270] -antigen-hook-antigen-bundle zsh-users/zsh-completions
+[TRA][1551083663.9881505966] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9881505966] Called antigen-bundle with zsh-users/zsh-completions BUNDLE
+[TRA][1551083663.9881505966] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9887192249] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9887192249] Updated meta: target -antigen-load-env mode repeat type replace called 9
+[WRN][1551083663.9887831211] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9887831211] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9888665676] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9888665676] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-completions btype plugin url https://github.com/zsh-users/zsh-completions.git loc / name zsh-users/zsh-completions make_local_clone true
+[WRN][1551083663.9889683723] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9889683723] Replaced hooked function.
+[LOG][1551083663.9890131950] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9890131950] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9891581535] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9891581535] Updated meta: target -antigen-load-source mode repeat type replace called 9
+[WRN][1551083663.9892156124] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9892156124] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9892795086] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9892795086] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-completions///zsh-completions.plugin.zsh
+[WRN][1551083663.9893403053] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9893403053] Replaced hooked function.
+[LOG][1551083663.9893829823] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9893829823] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9894611835] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9894611835] Return from hook antigen-bundle with 0
+[WRN][1551083663.9896426201] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9896426201] Updated meta: target antigen-bundle mode repeat type pre called 36
+[WRN][1551083663.9897174835] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9897174835] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9897587299] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9897587299] Pre hook: antigen-bundle-cached Vifon/deer
+[WRN][1551083663.9898214340] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9898214340] -antigen-hook-antigen-bundle Vifon/deer
+[TRA][1551083663.9898622036] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9898622036] Called antigen-bundle with Vifon/deer BUNDLE
+[TRA][1551083663.9898622036] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9904572964] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9904572964] Updated meta: target -antigen-load-env mode repeat type replace called 10
+[WRN][1551083663.9905219078] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9905219078] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9905915260] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9905915260] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/Vifon/deer btype plugin url https://github.com/Vifon/deer.git loc / name Vifon/deer make_local_clone true
+[WRN][1551083663.9906888008] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9906888008] Replaced hooked function.
+[LOG][1551083663.9907331467] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9907331467] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9908783436] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9908783436] Updated meta: target -antigen-load-source mode repeat type replace called 10
+[WRN][1551083663.9909346104] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9909346104] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9909927845] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9909927845] Replace hook: -antigen-load-source-cached
+[WRN][1551083663.9910502434] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9910502434] Replaced hooked function.
+[LOG][1551083663.9910924435] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9910924435] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9911799431] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9911799431] Return from hook antigen-bundle with 0
+[WRN][1551083663.9913163185] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9913163185] Updated meta: target antigen-bundle mode repeat type pre called 37
+[WRN][1551083663.9913668633] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9913668633] Processing hooks: antigen-bundle-cached
+[WRN][1551083663.9914066792] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083663.9914066792] Pre hook: antigen-bundle-cached willghatch/zsh-cdr
+[WRN][1551083663.9914848804] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083663.9914848804] -antigen-hook-antigen-bundle willghatch/zsh-cdr
+[TRA][1551083663.9915275574] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083663.9915275574] Called antigen-bundle with willghatch/zsh-cdr BUNDLE
+[TRA][1551083663.9915275574] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083663.9920854568] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9920854568] Updated meta: target -antigen-load-env mode repeat type replace called 11
+[WRN][1551083663.9921479225] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9921479225] Processing hooks: -antigen-load-env-cached
+[WRN][1551083663.9922153950] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9922153950] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/willghatch/zsh-cdr btype plugin url https://github.com/willghatch/zsh-cdr.git loc / name willghatch/zsh-cdr make_local_clone true
+[WRN][1551083663.9923138618] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9923138618] Replaced hooked function.
+[LOG][1551083663.9923577309] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9923577309] Return from hook -antigen-load-env with 0
+[WRN][1551083663.9925017357] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083663.9925017357] Updated meta: target -antigen-load-source mode repeat type replace called 11
+[WRN][1551083663.9925677776] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083663.9925677776] Processing hooks: -antigen-load-source-cached
+[WRN][1551083663.9926276207] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083663.9926276207] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/willghatch/zsh-cdr///cdr.plugin.zsh
+[WRN][1551083663.9926879406] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083663.9926879406] Replaced hooked function.
+[LOG][1551083663.9927296638] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9927296638] Return from hook -antigen-load-source with 0
+[LOG][1551083663.9928102493] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083663.9928102493] Return from hook antigen-bundle with 0
+[WRN][1551083664.0050721169] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083664.0050721169] Updated meta: target antigen-bundle mode repeat type pre called 38
+[WRN][1551083664.0051567554] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083664.0051567554] Processing hooks: antigen-bundle-cached
+[WRN][1551083664.0052006245] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083664.0052006245] Pre hook: antigen-bundle-cached --loc=themes/agnoster --btype=theme
+[WRN][1551083664.0052690506] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083664.0052690506] -antigen-hook-antigen-bundle --loc=themes/agnoster --btype=theme
+[TRA][1551083664.0053122044] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083664.0053122044] Called antigen-bundle with --loc=themes/agnoster --btype=theme BUNDLE
+[TRA][1551083664.0053122044] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083664.0058505535] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083664.0058505535] Updated meta: target -antigen-load-env mode repeat type replace called 12
+[WRN][1551083664.0059297085] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083664.0059297085] Processing hooks: -antigen-load-env-cached
+[WRN][1551083664.0060119629] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083664.0060119629] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh btype theme url https://github.com/robbyrussell/oh-my-zsh.git loc themes/agnoster.zsh-theme name robbyrussell/oh-my-zsh make_local_clone true
+[WRN][1551083664.0061275959] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083664.0061275959] Replaced hooked function.
+[LOG][1551083664.0061795712] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083664.0061795712] Return from hook -antigen-load-env with 0
+[WRN][1551083664.0063230991] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083664.0063230991] Updated meta: target -antigen-load-source mode repeat type replace called 12
+[WRN][1551083664.0063838959] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083664.0063838959] Processing hooks: -antigen-load-source-cached
+[WRN][1551083664.0064492226] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083664.0064492226] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/themes/agnoster.zsh-theme
+[WRN][1551083664.0065174103] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083664.0065174103] Replaced hooked function.
+[LOG][1551083664.0065674782] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083664.0065674782] Return from hook -antigen-load-source with 0
+[LOG][1551083664.0066516399] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083664.0066516399] Return from hook antigen-bundle with 0
+[WRN][1551083664.0067894459] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083664.0067894459] Updated meta: target antigen-bundle mode repeat type pre called 39
+[WRN][1551083664.0068395138] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083664.0068395138] Processing hooks: antigen-bundle-cached
+[WRN][1551083664.0068795681] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1487
+[WRN][1551083664.0068795681] Pre hook: antigen-bundle-cached zsh-users/zsh-syntax-highlighting
+[WRN][1551083664.0069432259] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083664.0069432259] -antigen-hook-antigen-bundle zsh-users/zsh-syntax-highlighting
+[TRA][1551083664.0069842339] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[TRA][1551083664.0069842339] Called antigen-bundle with zsh-users/zsh-syntax-highlighting BUNDLE
+[TRA][1551083664.0069842339] TRACE
+-antigen-hook-antigen-bundle
+-antigen-hook-handler
+antigen-bundle
+antigen-bundle-parallel-execute
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[WRN][1551083664.0075953007] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083664.0075953007] Updated meta: target -antigen-load-env mode repeat type replace called 13
+[WRN][1551083664.0076618195] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083664.0076618195] Processing hooks: -antigen-load-env-cached
+[WRN][1551083664.0077328682] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083664.0077328682] Replace hook: -antigen-load-env-cached dir /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-syntax-highlighting btype plugin url https://github.com/zsh-users/zsh-syntax-highlighting.git loc / name zsh-users/zsh-syntax-highlighting make_local_clone true
+[WRN][1551083664.0078365803] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083664.0078365803] Replaced hooked function.
+[LOG][1551083664.0078814030] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083664.0078814030] Return from hook -antigen-load-env with 0
+[WRN][1551083664.0080282688] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1469
+[WRN][1551083664.0080282688] Updated meta: target -antigen-load-source mode repeat type replace called 13
+[WRN][1551083664.0080888271] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083664.0080888271] Processing hooks: -antigen-load-source-cached
+[WRN][1551083664.0081470013] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1498
+[WRN][1551083664.0081470013] Replace hook: -antigen-load-source-cached /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-syntax-highlighting///zsh-syntax-highlighting.plugin.zsh
+[WRN][1551083664.0082085133] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083664.0082085133] Replaced hooked function.
+[LOG][1551083664.0082504749] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083664.0082504749] Return from hook -antigen-load-source with 0
+[LOG][1551083664.0083327293] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083664.0083327293] Return from hook antigen-bundle with 0
+[WRN][1551083664.0083947182] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:48
+[WRN][1551083664.0083947182] Parallel install done PARALLEL
+[WRN][1551083664.0086004734] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083664.0086004734] Ignoring hook due to mode once: antigen-apply-lock
+[WRN][1551083664.0086679459] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083664.0086679459] Ignoring hook due to mode once: antigen-apply-parallel
+[WRN][1551083664.0087313652] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083664.0087313652] Ignoring hook due to mode once: antigen-apply-defer
+[WRN][1551083664.0087921619] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1462
+[WRN][1551083664.0087921619] Ignoring hook due to mode once: antigen-apply-cached
+[WRN][1551083664.0088353157] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1484
+[WRN][1551083664.0088353157] Processing hooks: antigen-apply-lock antigen-apply-parallel antigen-apply-defer antigen-apply-cached
+[WRN][1551083664.0089120865] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1505
+[WRN][1551083664.0089120865] -antigen-hook-antigen-apply 
+[LOG][1551083664.0089538097] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2
+[LOG][1551083664.0089538097] Called antigen-apply
+[TRA][1551083664.0089886189] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:3
+[TRA][1551083664.0089886189] Gonna create compdump file @ apply COMPDUMP
+[TRA][1551083664.0089886189] TRACE
+-antigen-hook-antigen-apply
+-antigen-hook-handler
+antigen-apply
+antigen-apply-parallel-execute
+-antigen-hook-handler
+antigen-apply
+-antigen-hook-antigen
+-antigen-hook-handler
+antigen
+/home/hyliang/ENV/shareENV/shell_config/.zshrc
+/home/hyliang/ENV/CONF/.zshrc
+[LOG][1551083664.5776221752] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083664.5776221752] Return from hook antigen-apply with 0
+[WRN][1551083664.5778126717] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1509
+[WRN][1551083664.5778126717] Replaced hooked function.
+[WRN][1551083664.5778594017] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1513
+[WRN][1551083664.5778594017] Post hook: antigen-apply-lock
+[WRN][1551083664.5779016018] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:22
+[WRN][1551083664.5779016018] Freeing antigen-lock file at /home/hyliang/ENV/CONF/.antigen/.lock
+[WRN][1551083664.5859935284] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1513
+[WRN][1551083664.5859935284] Post hook: antigen-apply-cached
+[LOG][1551083664.5860972404] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:7
+[LOG][1551083664.5860972404] TRACE: /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1514 /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2 /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:11 /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1506 /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:2 /home/hyliang/ENV/shareENV/shell_config/.zshrc:138 /home/hyliang/ENV/CONF/.zshrc:9 zsh:0
+[LOG][1551083664.5864262581] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1787
+[LOG][1551083664.5864262581] Gonna generate cache for /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/bzr.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/clipboard.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/compfix.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/completion.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/correction.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/diagnostics.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/directories.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/functions.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/git.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/grep.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/history.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/key-bindings.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/misc.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/nvm.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/prompt_info_functions.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/spectrum.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/termsupport.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/lib/theme-and-appearance.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip/pip.plugin.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/svn-fast-info /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/svn-fast-info/svn-fast-info.plugin.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/colorize /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/colorize/colorize.plugin.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/github /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/github/github.plugin.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/python /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/python/python.plugin.zsh /home/hyliang/ENV/CONF/.antigen/bundles/rupa/z/z.sh /home/hyliang/ENV/CONF/.antigen/bundles/rupa/z/z.sh /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-autosuggestions// /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-autosuggestions///zsh-autosuggestions.plugin.zsh /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-completions// /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-completions///zsh-completions.plugin.zsh /home/hyliang/ENV/CONF/.antigen/bundles/Vifon/deer// /home/hyliang/ENV/CONF/.antigen/bundles/willghatch/zsh-cdr// /home/hyliang/ENV/CONF/.antigen/bundles/willghatch/zsh-cdr///cdr.plugin.zsh /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/themes/agnoster.zsh-theme /home/hyliang/ENV/CONF/.antigen/bundles/robbyrussell/oh-my-zsh/themes/agnoster.zsh-theme /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-syntax-highlighting// /home/hyliang/ENV/CONF/.antigen/bundles/zsh-users/zsh-syntax-highlighting///zsh-syntax-highlighting.plugin.zsh
+[LOG][1551083664.6962294579] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1844
+[LOG][1551083664.6962294579] CHECK_FILES /home/hyliang/ENV/CONF/.zshrc /home/hyliang/ENV/shareENV/shell_config/.zshrc
+[LOG][1551083665.1104571819] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083665.1104571819] Return from hook antigen-apply with 0
+[LOG][1551083665.1105821133] /home/hyliang/ENV/CONF/.local/bin/antigen.zsh:1518
+[LOG][1551083665.1105821133] Return from hook antigen with 0
