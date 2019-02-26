@@ -9,6 +9,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
+:q
 
 # Search String History (newest to oldest):
 
@@ -23,13 +24,58 @@
 	if [[ $(shopt login_shell) = *on ]]; then echo yes; else echo no; fid
 
 # File marks:
-'0  10  0  ~/test.sh
+'0  7  20  ~/.zshenv
+'1  1  0  ~/.env
+'2  10  0  ~/test.sh
 
 # Jumplist (newest first):
+-'  7  20  ~/.zshenv
+-'  1  0  ~/.zshenv
+-'  1  0  ~/.env
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  1  0  ~/.env
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  10  0  ~/test.sh
+-'  1  0  ~/test.sh
 -'  10  0  ~/test.sh
 -'  1  0  ~/test.sh
 
 # History of marks within files (newest to oldest):
+
+> ~/.zshenv
+	"	7	20
+	^	7	21
+	.	7	21
+	+	7	21
+
+> ~/.env
+	"	1	0
 
 > ~/test.sh
 	"	10	0
