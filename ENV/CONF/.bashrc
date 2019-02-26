@@ -8,7 +8,14 @@ echo lcoal .bashrc
 
 # bash 的 登录式，加载~/.profile, 在其中  . ~/.bashrc
 
-[ -f ~/.env ] &&  . ~/.env
+# 登录式bash
+if [[ $0 = -* ]]; then
+    echo 登录式bash
+else
+    echo 非登录式bash
+    [ -f ~/.bash_env ] &&  . ~/.bash_env
+fi
+
 [ -f $share_shell_config/.bashrc ] &&  . $share_shell_config/.bashrc
 
 if ! [[ $- != *i* ]]; then

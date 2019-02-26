@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+# 一切bash使用，都加载之
+
+echo .bash_env
+
+[ -f ~/.env ] && . ~/.env
+
+
