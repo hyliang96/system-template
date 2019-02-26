@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# git clone
-cd /home/$USER
-git clone https://github.com/hyliang96/system-template.git
-cp /home/$USER/system-template/{*,.*} /home/$USER
+# # git clone
+# cd /home/$USER
+# git clone https://github.com/hyliang96/system-template.git
+# cp /home/$USER/system-template/{*,.*} /home/$USER
 
 git clone https://github.com/hyliang96/shareENV.git /home/$USER/ENV/shareENV
 git clone https://github.com/hyliang96/serverENV.git /home/$USER/ENV/serverENV
