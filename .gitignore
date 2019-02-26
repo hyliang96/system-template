@@ -14,5 +14,5 @@ conda/
 /ENV/CONF/.zsh_history
 /ENV/CONF/.bash_history
 /ENV/localENV/log/sync_ENV_log/
-/ENV/CONF/.antigen/
-/ENV/CONF/.autojump/
+.antigen/
+.autojump/
