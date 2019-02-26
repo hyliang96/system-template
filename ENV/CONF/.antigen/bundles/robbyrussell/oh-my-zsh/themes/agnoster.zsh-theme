@@ -1,1 +1,0 @@
-/home/hyliang/ENV/shareENV/shell_config/agnoster.zsh-theme
