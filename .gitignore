@@ -16,3 +16,4 @@ conda/
 /ENV/localENV/log/sync_ENV_log/
 .antigen/
 .autojump/
+.ssh/
