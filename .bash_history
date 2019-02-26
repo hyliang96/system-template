@@ -1,1 +1,1 @@
-/home/hyliang/ENV/CONF/.bash_history
+ENV/CONF/.bash_history
