@@ -14,8 +14,9 @@ bash init_script/add_link.sh
 . /home/$USER/ENV/CONF/.zshenv
 
 # 安装vim 插件
-git clone https://github.com/VundleVim/Vundle.vim.git /home/$USER/ENV/CONF/.vim/bundle/Vundle.vim
-vim +BundleInstall +qall
+url -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
 
 # 更换zsh
 chsh -s `which zsh`
