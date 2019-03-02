@@ -4,13 +4,18 @@ echo local .bash_aliases
 [ -f $share_shell_config/.aliases ] && . $share_shell_config/.aliases
 
 # ------------------ 软件 ---------------------------
-
+# 搭建shadowsocks服务器
+if [ -f $server_script/my_sshost.sh ]; then
+    . $server_script/my_sshost.sh
+else
+    echo "$server_script/my_sshost.sh not found; unable to build shadowsocks server"
+fi
 
 # ------------------ 翻墙 ---------------------------
 if [ -f $server_script/fanqiang.sh  ]; then
-   	. $server_script/fanqiang.sh
+    . $server_script/fanqiang.sh
 else
-	echo "\$server_script/fanqiang.sh not found; unable to 翻墙!"
+    echo "$server_script/fanqiang.sh not found; unable to 翻墙!"
 fi
 # dropbox loader
 # 安装使用教程：https://linux.cn/article-6814-1.html
