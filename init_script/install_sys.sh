@@ -20,6 +20,10 @@ cd $serverENV
 git remote set-url origin git@github.com:hyliang96/serverENV
 cd /home/$USER
 
+# 创建ssh密钥
+mkdir ~/.ssh
+ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
+
 # 安装vim 插件
 url -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
