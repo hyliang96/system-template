@@ -5,8 +5,8 @@
 # git clone https://github.com/hyliang96/system-template.git
 # cp /home/$USER/system-template/{*,.*} /home/$USER
 
-git clone git@github.com:hyliang96/shareENV.git /home/$USER/ENV/shareENV
-git clone git@github.com:hyliang96/serverENV.git /home/$USER/ENV/serverENV
+git clone https://github.com/hyliang96/shareENV.git /home/$USER/ENV/shareENV
+git clone https://github.com/hyliang96/serverENV.git /home/$USER/ENV/serverENV
 
 # 更换链接
 bash init_script/add_link.sh
