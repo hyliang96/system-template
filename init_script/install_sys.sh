@@ -13,6 +13,13 @@ bash init_script/add_link.sh
 # 改home，方便后面的安装
 . /home/$USER/ENV/CONF/.zshenv
 
+# 从https换成ssh的url，方便之后免密push和pull
+cd $shareENV
+git remote set-url origin git@github.com:hyliang96/shareENV
+cd $serverENV
+git remote set-url origin git@github.com:hyliang96/serverENV
+cd /home/$USER
+
 # 安装vim 插件
 url -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
