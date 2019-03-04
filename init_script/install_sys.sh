@@ -23,6 +23,8 @@ cd /home/$USER
 # 创建ssh密钥
 mkdir ~/.ssh
 ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
+# 将github的公钥添加到本地
+ssh-keyscan -t rsa -H github.com >> ~/.ssh/known_hosts
 
 # 安装vim 插件
 url -fLo ~/.vim/autoload/plug.vim --create-dirs \
