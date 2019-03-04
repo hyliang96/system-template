@@ -25,24 +25,24 @@ alias dbx='python2 $server_script/dropbox.py'
 
 alias nb='jupyter notebook'
 
-# ssh
-if [ "`uname -a | grep -E 'gpu[0-9] |gpu1[0-3] |cluster[1-4] '`" != "" ]; then
-    # 在gpu1-11，cluster1-4
-    alias ssh='ssh -F ~/.ssh/config_JUN1'
-    alias sshfs='sshfs -F ~/.ssh/config_JUN1'
-    alias scp='scp -r -F ~/.ssh/config_JUN1'
-    alias vssh='sub ~/.ssh/config_JUN1'
-else
-# elif [ "`hostname -i | grep 166.111.121.42`" != "" ]; then
-    # 在gpu>=14
-    alias ssh='ssh -F ~/.ssh/config_JUN2'
-    alias vssh='sub ~/.ssh/config_JUN2'
-    alias scp='scp -r -F ~/.ssh/config_JUN2'
-    alias sshfs='sshfs -F ~/.ssh/config_JUN2'
+# # ssh
+# if [ "`uname -a | grep -E 'gpu[0-9] |gpu1[0-3] |cluster[1-4] '`" != "" ]; then
+    # # 在gpu1-11，cluster1-4
+    # alias ssh='ssh -F ~/.ssh/config_JUN1'
+    # alias sshfs='sshfs -F ~/.ssh/config_JUN1'
+    # alias scp='scp -r -F ~/.ssh/config_JUN1'
+    # alias vssh='sub ~/.ssh/config_JUN1'
 # else
-#     alias vssh='sub ~/.ssh/config'
-fi
-alias sssh='cp -r ~/.ssh /home/${USER}/.ssh'
+# # elif [ "`hostname -i | grep 166.111.121.42`" != "" ]; then
+    # # 在gpu>=14
+    # alias ssh='ssh -F ~/.ssh/config_JUN2'
+    # alias vssh='sub ~/.ssh/config_JUN2'
+    # alias scp='scp -r -F ~/.ssh/config_JUN2'
+    # alias sshfs='sshfs -F ~/.ssh/config_JUN2'
+# # else
+# #     alias vssh='sub ~/.ssh/config'
+# fi
+# alias sssh='cp -r ~/.ssh /home/${USER}/.ssh'
 
 
 
