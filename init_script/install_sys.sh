@@ -35,3 +35,6 @@ vim +PlugInstall +qall
 # 更换zsh
 chsh -s `which zsh`
 
+# 初次登录zsh以便安装zsh
+zsh
+
