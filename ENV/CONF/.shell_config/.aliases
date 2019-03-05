@@ -44,7 +44,10 @@ alias nb='jupyter notebook'
 # fi
 # alias sssh='cp -r ~/.ssh /home/${USER}/.ssh'
 
-
+# 更换vim
+if [ -x /usr/bin/vim.gnome ]; then
+    alias vim=/usr/bin/vim.gnome
+fi
 
 fix_zsh_history()
 {
