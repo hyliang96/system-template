@@ -17,4 +17,4 @@ conda/
 .antigen/
 .autojump/
 .ssh/
-.local/share/nvim
+.local/share/nvim/*
