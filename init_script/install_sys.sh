@@ -32,17 +32,20 @@ ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
 ssh-keyscan -t rsa -H github.com >> ~/.ssh/known_hosts
 
 # 安装vim 插件
-# url -fLo ~/.vim/autoload/plug.vim --create-dirs \
-        # https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # vim +PlugInstall +qall
+
+# 安装nvim插件
 $install_path/ENV/serverENV/nvim/usr/bin/nvim  +'PlugInstall --sync' +'PlugUpdate' +qa
 # 会自动安装各个插件，其中YouCompleteMe需要编译，会自动完成，编译无需sudo权限
+# 编译nvim的YouCompleteMe, 不需要事先安装nvim的python支持 `pip install neovim`
+    # 编译无需此python支持，但使用YouCompleteMe需要
 # 其编译依赖：cmake，build-essential，python-dev
-# 若缺，可根据报错情管理员安装之
-# sudo apt-get install cmake
-# sudo apt-get install build-essential
-# sudo apt-get install python python-dev
-# 然后重新`vim +PlugInstall +qall`，以编译YouCompleteMe
+    # 若缺，可根据报错情管理员安装之
+    # sudo apt-get install cmake
+    # sudo apt-get install build-essential
+    # sudo apt-get install python python-dev
+    # 然后删除~/.vim/plugged/YouCompleteMe/ 文件夹,
+    # 重新执行 `vim +PlugInstall +qall`或 `$install_path/ENV/serverENV/nvim/usr/bin/nvim  +'PlugInstall --sync' +'PlugUpdate' +qa`，以编译YouCompleteMe
 
 # 更换zsh
 chsh -s `which zsh`
