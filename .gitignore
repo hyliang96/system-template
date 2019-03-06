@@ -18,3 +18,4 @@ conda/
 .autojump/
 .ssh/
 /ENV/CONF/.local/share/nvim/
+.wget-hsts
