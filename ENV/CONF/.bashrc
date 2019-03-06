@@ -1,5 +1,5 @@
 #!/bin/bash
-echo lcoal .bashrc
+[ $DotFileDebug -ne 0 ] && echo lcoal .bashrc
 
 # bash的交互 加载之
 
@@ -10,16 +10,16 @@ echo lcoal .bashrc
 
 # 登录式bash
 if [[ $0 = -* ]]; then
-    echo 登录式bash
+    [ $DotFileDebug -ne 0 ] && echo 登录式bash
 else
-    echo 非登录式bash
+    [ $DotFileDebug -ne 0 ] && echo 非登录式bash
     [ -f ~/.bash_env ] &&  . ~/.bash_env
 fi
 
 [ -f $share_shell_config/.bashrc ] &&  . $share_shell_config/.bashrc
 
 if ! [[ $- != *i* ]]; then
-    echo 交互模式
+    [ $DotFileDebug -ne 0 ] && echo 交互模式
     [ -f ~/.shell_config/.aliases ] &&  . ~/.shell_config/.aliases
 fi
 

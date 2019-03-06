@@ -2,7 +2,7 @@
 
 # 一切shell，登录手动执行此文件
 
-echo .login
+[ $DotFileDebug -ne 0 ] && echo .login
 
 login_sync
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-echo local .bash_aliases
+[ $DotFileDebug -ne 0 ] && echo local .bash_aliases
 
 [ -f $share_shell_config/.aliases ] && . $share_shell_config/.aliases
 
@@ -46,8 +46,9 @@ alias nb='jupyter notebook'
 
 # 更换vim-gnome, 以支持clipboard
 if [ -x /usr/bin/vim.gnome ]; then
-    alias vim=/usr/bin/vim.gnome
+    alias vim='/usr/bin/vim.gnome'
 fi
+alias v='vim'
 
 fix_zsh_history()
 {
@@ -57,4 +58,4 @@ fix_zsh_history()
     rm ~/.zsh_history_bad
 }
 
-echo end local aliases
+[ $DotFileDebug -ne 0 ] && echo end local aliases
