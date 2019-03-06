@@ -27,9 +27,10 @@ ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
 ssh-keyscan -t rsa -H github.com >> ~/.ssh/known_hosts
 
 # 安装vim 插件
-url -fLo ~/.vim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +PlugInstall +qall
+# url -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        # https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# vim +PlugInstall +qall
+/home/$USER/ENV/serverENV/nvim/usr/bin/nvim  +'PlugInstall --sync' +'PlugUpdate' +qa
 # 会自动安装各个插件，其中YouCompleteMe需要编译，会自动完成，编译无需sudo权限
 # 其编译依赖：cmake，build-essential，python-dev
 # 若缺，可根据报错情管理员安装之
