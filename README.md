@@ -228,7 +228,7 @@ $install_dir/
 			nvim/             : neovim 的镜像及其解压文件夹
 			...
 		localENV/     ------- 一个文件夹，该服务器自己用的，不同步
-            (结构同shareENV/)
+			(结构同shareENV/)
 		其他共享ENV ------- 一个repo，在我的一些电脑之间共用，每次登录登出时同步
 			(结构同shareENV/)
 ```
