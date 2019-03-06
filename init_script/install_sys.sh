@@ -14,7 +14,7 @@ git clone https://github.com/hyliang96/shareENV.git  $install_path/ENV/shareENV
 git clone https://github.com/hyliang96/serverENV.git  $install_path/ENV/serverENV
 
 # 更换链接
-bash $here/add_link.sh
+# bash $here/add_link.sh
 # 改home，方便后面的安装
 .  $install_path/ENV/CONF/.zshenv
 
