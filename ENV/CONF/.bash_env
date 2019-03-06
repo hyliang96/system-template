@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # 一切bash使用，都加载之
-
+DotFileDebug=0
 [ $DotFileDebug -ne 0 ] && echo .bash_env
 
 [ -f ~/.env ] && . ~/.env
+
 
 

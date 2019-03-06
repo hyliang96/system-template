@@ -1,4 +1,6 @@
 #!/bin/bash
+
+DotFileDebug=0
 [ $DotFileDebug -ne 0 ] && echo lcoal .bashrc
 
 # bash的交互 加载之
