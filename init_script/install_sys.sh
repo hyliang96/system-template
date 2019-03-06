@@ -1,24 +1,29 @@
 #!/bin/bash
 
-# # git clone
-# cd /home/$USER
-# git clone https://github.com/hyliang96/system-template.git
-# cp /home/$USER/system-template/{*,.*} /home/$USER
+# get absoltae path to the dir this is in, work in bash, zsh
+# if you want transfer symbolic link to true path, just change `pwd` to `pwd -P`
+here=$(cd "$(dirname "${BASH_SOURCE[0]-$0}")"; pwd)
+. $here/install_path.sh
 
-git clone https://github.com/hyliang96/shareENV.git /home/$USER/ENV/shareENV
-git clone https://github.com/hyliang96/serverENV.git /home/$USER/ENV/serverENV
+# # git clone
+# cd $install_path
+# git clone https://github.com/hyliang96/system-template.git
+# cp  $install_path/system-template/{*,.*} $install_path
+
+git clone https://github.com/hyliang96/shareENV.git  $install_path/ENV/shareENV
+git clone https://github.com/hyliang96/serverENV.git  $install_path/ENV/serverENV
 
 # 更换链接
-bash init_script/add_link.sh
+bash $here/add_link.sh
 # 改home，方便后面的安装
-. /home/$USER/ENV/CONF/.zshenv
+.  $install_path/ENV/CONF/.zshenv
 
 # 从https换成ssh的url，方便之后免密push和pull
 cd $shareENV
 git remote set-url origin git@github.com:hyliang96/shareENV
 cd $serverENV
 git remote set-url origin git@github.com:hyliang96/serverENV
-cd /home/$USER
+cd $install_path
 
 # 创建ssh密钥
 mkdir ~/.ssh
@@ -30,7 +35,7 @@ ssh-keyscan -t rsa -H github.com >> ~/.ssh/known_hosts
 # url -fLo ~/.vim/autoload/plug.vim --create-dirs \
         # https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # vim +PlugInstall +qall
-/home/$USER/ENV/serverENV/nvim/usr/bin/nvim  +'PlugInstall --sync' +'PlugUpdate' +qa
+$install_path/ENV/serverENV/nvim/usr/bin/nvim  +'PlugInstall --sync' +'PlugUpdate' +qa
 # 会自动安装各个插件，其中YouCompleteMe需要编译，会自动完成，编译无需sudo权限
 # 其编译依赖：cmake，build-essential，python-dev
 # 若缺，可根据报错情管理员安装之
