@@ -12,13 +12,15 @@ here=$(cd "$(dirname "${BASH_SOURCE[0]-$0}")"; pwd)
 
 git clone https://github.com/hyliang96/shareENV.git  $install_path/ENV/shareENV
 git clone https://github.com/hyliang96/serverENV.git  $install_path/ENV/serverENV
-git cloen https://github.com/hyliang96/shadowsocks_ips.git  $serverENV/app_config/.shadowsocks
-git cloen https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
+
 
 # 更换链接
 # bash $here/add_link.sh
 # 改home，方便后面的安装
 .  $install_path/ENV/CONF/.zshenv
+
+git clone https://github.com/hyliang96/shadowsocks_ips.git  $serverENV/app_config/.shadowsocks
+git cloen https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
 
 # 从https换成ssh的url，方便之后免密push和pull
 cd $shareENV
