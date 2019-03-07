@@ -20,7 +20,7 @@ git clone https://github.com/hyliang96/serverENV.git  $install_path/ENV/serverEN
 .  $install_path/ENV/CONF/.zshenv
 
 git clone https://github.com/hyliang96/shadowsocks_ips.git  $serverENV/app_config/.shadowsocks
-git cloen https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
+git clone https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
 
 # 从https换成ssh的url，方便之后免密push和pull
 cd $shareENV
