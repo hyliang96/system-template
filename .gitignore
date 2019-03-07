@@ -20,3 +20,4 @@ conda/
 /ENV/CONF/.local/share/nvim/
 .wget-hsts
 /ENV/CONF/.conda/
+/ENV/CONF/.lesshst
