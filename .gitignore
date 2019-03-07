@@ -19,3 +19,4 @@ conda/
 .ssh/
 /ENV/CONF/.local/share/nvim/
 .wget-hsts
+/ENV/CONF/.conda/
