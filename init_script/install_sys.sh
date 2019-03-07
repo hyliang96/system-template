@@ -40,11 +40,13 @@ ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
 # 将github的公钥添加到本地
 ssh-keyscan -t rsa -H github.com >> ~/.ssh/known_hosts
 
+
+.  $install_path/ENV/CONF/.zshenv
 # 安装vim 插件
 # vim +PlugInstall +qall
 
 # 安装nvim插件
-$install_path/ENV/serverENV/nvim/usr/bin/nvim  +'PlugInstall --sync' +'PlugUpdate' +qa
+nvim  +'PlugInstall --sync' +'PlugUpdate' +qa
 # 会自动安装各个插件，其中YouCompleteMe需要编译，会自动完成，编译无需sudo权限
 # 编译nvim的YouCompleteMe, 不需要事先安装nvim的python支持 `pip install neovim`
     # 编译无需此python支持，但使用YouCompleteMe需要
