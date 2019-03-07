@@ -98,24 +98,21 @@ sudo apt-get install build-essential
 
 下文
 
-```bash
-install_dir=/home/$USER
-```
 
 把目录清空
 
 ```bash
-rm $install_dir/backup_before_install -rf
-mkdir $install_dir/backup_before_install
-mv $install_dir/*  $install_dir/backup_before_install
-mv $install_dir/.*  $install_dir/backup_before_install
+rm /home/$USER/backup_before_install -rf
+mkdir /home/$USER/backup_before_install
+mv /home/$USER/*  /home/$USER/backup_before_install
+mv /home/$USER/.*  /home/$USER/backup_before_install
 ```
 
 或者全部清空【危险】
 
 ```bash
-rm $install_dir/* -rf
-rm $install_dir/.* -rf
+rm /home/$USER/* -rf
+rm /home/$USER/.* -rf
 ```
 
 重新登录，进入bash
@@ -129,25 +126,24 @@ rm $install_dir/.* -rf
   * 登录登出同步共享文件的脚本
 
 ```bash
-cd $install_dir
+cd /home/$USER
 git clone https://github.com/hyliang96/system-template.git
-cp $install_dir/system-template/{*,.*} $install_dir -r
-rm $install_dir/system-template -rf
+cp /home/$USER/system-template/{*,.*} /home/$USER -r
+rm /home/$USER/system-template -rf
 ```
 
 ```bash
-vi init_script/install_path.sh # 填写安装路径
-vi ENV/CONF/.env               # 修改my=《$install_dir》
-bash $install_dir/init_script/install_sys.sh
+# vi init_script/install_path.sh # 默认不是root用户，不用填写安装路径
+# vi ENV/CONF/.env               # 默认不是root用户，不用修改my=《/home/$USER》
+bash /home/$USER/init_script/install_sys.sh
 ```
 
 * 安装科学计算软件：anaconda、pytorch、7z、tensoflow等等
 
-```bash
-install_dir=/home/$USER
-bash $install_dir/init_script/cpu_software.sh
+```bash/home/$USER=/home/$USER
+bash /home/$USER/init_script/cpu_software.sh
 # 或
-bash $install_dir/init_script/gpu_software.sh
+bash /home/$USER/init_script/gpu_software.sh
 ```
 
 * 如果vim中的YouCompleteMe用不了，就得自己手动编译
@@ -204,7 +200,7 @@ sudo hwclock --systohc # 修改硬件CMOS的时间，如果没有这一步的话
 ### 文件夹结构
 
 ```
-$install_dir/
+/home/$USER/
 	一堆软链接点文件，指向CONF下的文件，详见下[#软连接]
 	init_script/
 		系统环境安装脚本
@@ -271,11 +267,11 @@ zsh 在上述情况都会自动加载`~/.zshenv`，无需另外设置
 
 #### `$HOME/`
 
-`$HOME=$install_dir/ENV/CONF`
+`$HOME=/home/$USER/ENV/CONF`
 
-`$shareENV=$install_dir/ENV/shareENV`
+`$shareENV=/home/$USER/ENV/shareENV`
 
-`$serverENV=$install_dir/ENV/serverENV`
+`$serverENV=/home/$USER/ENV/serverENV`
 
 | 源文件            | 目标文件                                  |
 | ----------------- | ----------------------------------------- |
@@ -295,10 +291,10 @@ zsh 在上述情况都会自动加载`~/.zshenv`，无需另外设置
 | `$HOME/`          | `$$ENV/.shell_config/`                    |
 | .env              | ../CONF/.shell_config/.env                |
 
-#### `$install_dir/`
+#### `/home/$USER/`
 | 源文件          | 目标文件                    |
 | --------------- | --------------------------- |
-| `$install_dir/` | `$HOME`                     |
+| `/home/$USER/` | `$HOME`                     |
 | .bash_env       | ENV/CONF/.bash_env          |
 | .bash_history   | ENV/CONF/.bash_history      |
 | .cache          | ENV/CONF/.cache/            |
@@ -330,7 +326,7 @@ zsh 在上述情况都会自动加载`~/.zshenv`，无需另外设置
 
 在任何bash环境下，以下两种的结果相同
 
-- 文件中写\<判断命令>再`. 文件` 
+- 文件中写\<判断命令>再`. 文件`
 - 直接执行\<判断命令>
 
 **示例**
