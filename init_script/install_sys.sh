@@ -13,6 +13,7 @@ here=$(cd "$(dirname "${BASH_SOURCE[0]-$0}")"; pwd)
 git clone https://github.com/hyliang96/shareENV.git  $install_path/ENV/shareENV
 git clone https://github.com/hyliang96/serverENV.git  $install_path/ENV/serverENV
 git cloen https://github.com/hyliang96/shadowsocks_ips.git  $serverENV/app_config/.shadowsocks
+git cloen https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
 
 # 更换链接
 # bash $here/add_link.sh
@@ -26,6 +27,8 @@ cd $serverENV
 git remote set-url origin git@github.com:hyliang96/serverENV
 cd $serverENV/app_config/.shadowsocks
 git remote set-url origin git@github.com:hyliang96/shadowsocks_ips
+cd  $shareENV/app_config/vim
+git remote set-url origin git@github.com:hyliang96/sublimy-vim.git
 
 cd $install_path
 
