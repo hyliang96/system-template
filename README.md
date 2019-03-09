@@ -13,11 +13,11 @@
 * 按电脑分组，将共享配置文件同步
 * 一键安装shadowsocks服务器
 
-**子模块**
+**子repo**
 
-* https://github.com/hyliang96/shareENV
-* https://github.com/hyliang96/serverENV
-* https://github.com/hyliang96/shadowsocks_ips
+* [Linux服务器共享的配置](https://github.com/hyliang96/shareENV)
+* [Linux/Mac共享的配置](https://github.com/hyliang96/serverENV)
+* [Sublime风格的vim配置](https://github.com/hyliang96/sublimy-vim)
 
 ## 安装方法
 
