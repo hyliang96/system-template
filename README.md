@@ -85,6 +85,7 @@ sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不
 #### 安装软件
 
 ```bash
+sudo apt install git
 sudo apt install zsh
 # YouCompleteMe 的依赖 如下
 sudo apt install python # python2,3 都装了
