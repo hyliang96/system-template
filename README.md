@@ -179,6 +179,18 @@ s3 install
 
 执行过程中需要输入sudo密码
 
+见`Which Shadowsocks server you'd select:` 选 `Shadowsocks-Python`
+
+见`Please enter a port for Shadowsocks-Python` 建议输入一个五位数作为shadowsocks服务端端口
+
+见`Please select stream cipher for Shadowsocks-Python:` 建议选 `chacha20` 作为加密协议，其性能目前最好
+
+然后一路回车，等它编译完
+
+使用方法为`s3 [start | restart | stop| status| help]`
+
+使用`s3 start`开启shadowsocks服务端后，把上述配置填写到你笔记本的shadowsocks客户端，测测能不能正常工作
+
 ## 注意事项
 
 ### 隐私文件
