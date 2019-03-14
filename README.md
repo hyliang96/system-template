@@ -160,7 +160,7 @@ $shareENV/app_config/vim/.vim/plugged/YouCompleteMe/install.py
 ssh-copy-id -i ~/.ssh/<私钥名> <服务器别名>
 ```
 
-私钥名默认为`id_rsa`
+私钥名可缺省，缺省值为`id_rsa`
 
 
 - 服务器上
