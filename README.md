@@ -91,6 +91,9 @@ sudo apt install zsh
 # 安装nc
 sudo apt-get -y install netcat-traditional 
 
+# 安装vim-gnome
+sudo apt-get install vim-gnome
+
 # 安装neovim的python依赖
 sudo apt install python-pip
 sudo pip install neovim
