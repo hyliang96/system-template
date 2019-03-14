@@ -85,8 +85,16 @@ sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不
 #### 安装软件
 
 ```bash
+# 以下软件系统没预装的话就装一个
 sudo apt install git
 sudo apt install zsh
+# 安装nc
+sudo apt-get -y install netcat-traditional 
+
+# 安装neovim的python依赖
+sudo apt install python-pip
+sudo pip install neovim
+
 # YouCompleteMe 的依赖 如下
 sudo apt install python # python2,3 都装了
 sudo apt install cmake
@@ -175,6 +183,18 @@ s3 install
 ```
 
 执行过程中需要输入sudo密码
+
+见`Which Shadowsocks server you'd select:` 选 `Shadowsocks-Python`
+
+见`Please enter a port for Shadowsocks-Python` 建议输入一个五位数作为shadowsocks服务端端口
+
+见`Please select stream cipher for Shadowsocks-Python:` 建议选 `chacha20` 作为加密协议，其性能目前最好
+
+然后一路回车，等它编译完
+
+使用方法为`s3 [start | restart | stop| status| help]`
+
+使用`s3 start`开启shadowsocks服务端后，把上述配置填写到你笔记本的shadowsocks客户端，测测能不能正常工作
 
 ## 注意事项
 
