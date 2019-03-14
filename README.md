@@ -88,8 +88,9 @@ sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不
 # 以下软件系统没预装的话就装一个
 sudo apt install git
 sudo apt install zsh
+sudo apt install tmux
 # 安装nc
-sudo apt-get -y install netcat-traditional 
+sudo apt-get -y install netcat-traditional
 
 # 安装neovim的python依赖
 sudo apt install python-pip
