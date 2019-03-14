@@ -84,6 +84,8 @@ sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不
 
 #### 安装软件
 
+Debian 没有预装以下软件，需要装以下软件；Ubuntu 预装了，跳过这部
+
 ```bash
 # 以下软件系统没预装的话就装一个
 sudo apt install git
@@ -91,7 +93,11 @@ sudo apt install zsh
 sudo apt install tmux
 # 安装nc
 sudo apt-get -y install netcat-traditional
+```
 
+所有情况都要装以下软件
+
+```bash
 # 安装vim-gnome
 sudo apt-get install vim-gnome
 
