@@ -21,3 +21,4 @@ conda/
 .wget-hsts
 /ENV/CONF/.conda/
 /ENV/CONF/.lesshst
+/ENV/CONF/.local/
