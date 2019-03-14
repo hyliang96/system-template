@@ -87,6 +87,9 @@ sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不
 ```bash
 sudo apt install git
 sudo apt install zsh
+# 安装neovim的python依赖
+sudo apt install python-pip
+sudo pip install neovim
 # YouCompleteMe 的依赖 如下
 sudo apt install python # python2,3 都装了
 sudo apt install cmake
