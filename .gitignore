@@ -22,3 +22,4 @@ conda/
 /ENV/CONF/.conda/
 /ENV/CONF/.lesshst
 /ENV/CONF/.local/
+/backup_before_install/
