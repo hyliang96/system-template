@@ -8,6 +8,10 @@ here=$(cd "$(dirname "${BASH_SOURCE[0]-$0}")"; pwd)
 cd $here
 wget https://repo.continuum.io/archive/Anaconda3-2018.12-Linux-x86_64.sh
 bash Anaconda3-2018.12-Linux-x86_64.sh -p $install_path/ENV/localENV/anaconda3 -b
+
+# 安装notebook的配色
+conda install -c conda-forge jupyterthemes
+
 # 默认环境是python3.6，pip=pip3=pip3.7
 pip install -U pip
 pip install shadowsocks
