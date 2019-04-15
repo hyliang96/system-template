@@ -15,6 +15,7 @@ conda/
 /ENV/CONF/.zsh_history
 /ENV/CONF/.bash_history
 /ENV/CONF/.conda/
+/ENV/CONF/.mozilla/
 /ENV/CONF/.lesshst
 /ENV/CONF/.local/
 /ENV/CONF/.local/share/nvim/
