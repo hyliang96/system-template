@@ -283,13 +283,22 @@ bash的非交互需要额外设置
 * 登录式的非交互：若bash是默认shell，`ssh <服务器> <命令>`，不执行`~/.bash_env`，**没有找到办法**；只能
 
   ```bash
-  ssh <服务器> '. ~/.bash_env && <命令>’
+  ssh <服务器> '. ~/.bash_env && <命令>’ 
+  # 或
+  ssh <服务器> 'bash -c "<命令>"' 
   ```
 
-* 非登录式的非交互：`bash -c '<命令>'`或`bash 文件`，在.env中添加一行：
+* 非登录式的非交互：`bash -c '<命令>'`或`bash 文件`，在`.env`中添加一行：
 
   ```bash
   export BASH_ENV=~/.bash_env   # 可登录后，非交互bash加载之
+  ```
+
+* 非登录式非交互：此情况bash默认不开启alias，即就算source了`.aliases`文件，但alias仍然用不了，需要在`~/.bash_env` 中加一行
+
+  ```bash
+  shopt -s expand_aliases # 强制启用alias
+  # 之后设置的alias才有用
   ```
 
 zsh 在上述情况都会自动加载`~/.zshenv`，无需另外设置

@@ -20,7 +20,7 @@ fi
 
 [ -f $share_shell_config/.bashrc ] &&  . $share_shell_config/.bashrc
 
-if ! [[ $- != *i* ]]; then
+if [[ $- = *i* ]]; then
     [ $DotFileDebug -ne 0 ] && echo 交互模式
     [ -f ~/.shell_config/.aliases ] &&  . ~/.shell_config/.aliases
 fi
