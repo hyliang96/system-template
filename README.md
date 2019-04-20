@@ -85,33 +85,10 @@ sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不
 
 #### 安装软件
 
-Debian 没有预装以下软件，需要装以下软件；Ubuntu 预装了，跳过这部
+请使用sudo运行，以安装各种依赖软件
 
 ```bash
-# 以下软件系统没预装的话就装一个
-sudo apt install git
-sudo apt install zsh
-sudo apt install tmux
-# 安装nc
-sudo apt-get -y install netcat-traditional
-```
-
-所有情况都要装以下软件
-
-```bash
-# 安装vim-gnome
-sudo apt-get install vim-gnome
-
-# 安装neovim的python依赖
-sudo apt install python-pip
-sudo pip install neovim
-
-# YouCompleteMe 的依赖 如下
-sudo apt install python # python2,3 都装了
-sudo apt install cmake
-sudo apt install python-dev
-sudo apt-get install build-essential
-# YouCompleteMe 的依赖 结束
+sudo bash /home/$USER/init_script/sudo_install.sh
 ```
 
 ### 备份
