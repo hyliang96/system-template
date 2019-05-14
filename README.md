@@ -16,8 +16,8 @@
 
 **子repo**
 
-* [Linux服务器共享的配置](https://github.com/hyliang96/shareENV)
-* [Linux/Mac共享的配置](https://github.com/hyliang96/serverENV)
+* [Linux/Mac共享的配置](https://github.com/hyliang96/shareENV)
+* [Linux服务器共享的配置](https://github.com/hyliang96/serverENV)
 * [Sublime风格的vim配置](https://github.com/hyliang96/sublimy-vim)
 
 ## 安装方法
