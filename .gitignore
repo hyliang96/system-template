@@ -92,6 +92,8 @@ ENV/CONF/.scim/
 ENV/CONF/.sogouinput/
 ENV/CONF/.xinputrc
 ENV/CONF/.xprofile
+ENV/CONF/.byobu/
+ENV/CONF/.mplayer/
 ENV/CONF/Desktop/
 
 /backup_before_install/
