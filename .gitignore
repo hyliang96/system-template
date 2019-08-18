@@ -22,6 +22,7 @@ conda/
 /ENV/CONF/.dbus/
 /ENV/CONF/.selected_editor
 /ENV/CONF/.xsession-errors
+/ENV/CONF/.rnd
 
 /ENV/localENV/log/sync_ENV_log/
 
@@ -47,7 +48,7 @@ conda/
 
 .config/
 .pam_environment
-.scim/ 
+.scim/
 /ENV/CONF/.config/SogouPY*/
 /ENV/CONF/.config/Trolltech.conf
 /ENV/CONF/.config/akregatorrc
