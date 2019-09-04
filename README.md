@@ -191,6 +191,15 @@ s3 install
 
 列出来，把它们单独写成一个repo，然后每次登录登出时同步
 
+### git push本项目
+
+如果要从安装好了本项目的主机目录`/home/$USER` 进行 `git push`，请将其下的`.git/config`中的`url`配置从`https://github.com/` 改为 `git@github.com:`以便`git push`
+
+~~~
+[remote "origin"]
+	url = git@github.com:hyliang96/system-template.git
+~~~
+
 ## 组织逻辑
 
 - 各种shell的dot 文件
