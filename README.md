@@ -135,7 +135,7 @@ rm /home/$USER/system-template -rf
 bash /home/$USER/init_script/install_sys.sh
 ```
 
-* 安装科学计算软件：anaconda、pytorch、7z、tensoflow等等
+* 安装科学计算软件：miniconda、pytorch、7z、tensoflow等等
 
 ```bash/home/$USER=/home/$USER
 bash /home/$USER/init_script/cpu_software.sh
@@ -154,7 +154,7 @@ $shareENV/app_config/vim/.vim/plugged/YouCompleteMe/install.py
 - 笔记本上
 
 ```bash
-ssh-copy-id -i ~/.ssh/<私钥名> <服务器别名>
+ssh-copy-id [-i ~/.ssh/<私钥名>] <服务器别名>
 ```
 
 私钥名可缺省，缺省值为`id_rsa`
@@ -188,18 +188,7 @@ s3 install
 
 ### 隐私文件
 
-列出来，把它们单独写成一个repo，然后每次登录登出时同步？
-
-### 时区修改
-
-虽然上述配置为个人用户修改了时区。有root权限的话，记得修改系统时区
-
-```bash
-date -R # 再次查看时间
-sudo cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
-date -R # 再次查看时间，确认已经修改为北京时间
-sudo hwclock --systohc # 修改硬件CMOS的时间，如果没有这一步的话，后面时间还是不准
-```
+列出来，把它们单独写成一个repo，然后每次登录登出时同步
 
 ## 组织逻辑
 
