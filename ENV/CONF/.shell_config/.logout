@@ -1,0 +1,7 @@
+#!/bin/bash
+# 一切shell，登出手动执行此文件
+
+[ $DotFileDebug -ne 0 ] && echo .logout
+
+logout_sync
+

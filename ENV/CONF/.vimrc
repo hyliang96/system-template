@@ -1,0 +1,1 @@
+../shareENV/app_config/vim/.vimrc
