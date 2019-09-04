@@ -21,7 +21,6 @@ conda/
 .pam_environment
 .scim/
 
-/ENV/CONF/*
 /ENV/CONF/.config/*
 !/ENV/CONF/.config/nvim
 
