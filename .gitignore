@@ -46,7 +46,7 @@ conda/
 /ENV/CONF/.config/user-dirs.locale
 /ENV/CONF/.config/xfce4/
 
-.config/
+/.config/
 .pam_environment
 .scim/
 /ENV/CONF/.config/SogouPY*/
