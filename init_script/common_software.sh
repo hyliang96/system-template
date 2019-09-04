@@ -6,19 +6,23 @@ here=$(cd "$(dirname "${BASH_SOURCE[0]-$0}")"; pwd)
 . $here/install_path.sh
 
 cd $here
-wget https://repo.continuum.io/archive/Anaconda3-2018.12-Linux-x86_64.sh
-bash Anaconda3-2018.12-Linux-x86_64.sh -p $install_path/ENV/localENV/anaconda3 -b
+# wget https://repo.continuum.io/archive/Anaconda3-2018.12-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -p $install_path/ENV/localENV/anaconda3 -b
 
 # 安装notebook的配色
-conda install -c conda-forge jupyterthemes
+# conda install -c conda-forge jupyterthemes
 
 # 默认环境是python3.6，pip=pip3=pip3.7
 pip install -U pip
+pip install jupyter
+pip install jupyterthemes
 pip install shadowsocks
+mkdir /home/${USER}/ENV/localENV/log/{polipo,shadowsocks}
 # 安装neovim的python支持
 pip install neovim
 
-conda install -c bioconda p7zip --yes
+# conda install -c bioconda p7zip --yes
 # 装 7z, 7za, 7zr ；-yes 表示不要问yes还是no，直接装
 
-
+unset -v here

@@ -58,6 +58,8 @@ nvim  +'PlugInstall --sync' +'PlugUpdate' +qa
     # 然后删除~/.vim/plugged/YouCompleteMe/ 文件夹,
     # 重新执行 `vim +PlugInstall +qall`或 `$install_path/ENV/serverENV/nvim/usr/bin/nvim  +'PlugInstall --sync' +'PlugUpdate' +qa`，以编译YouCompleteMe
 
+unset -v here
+
 # 更换zsh
 chsh -s `which zsh`
 
