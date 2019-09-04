@@ -135,7 +135,7 @@ rm /home/$USER/system-template -rf
 bash /home/$USER/init_script/install_sys.sh
 ```
 
-* 安装科学计算软件：anaconda、pytorch、7z、tensoflow等等
+* 安装科学计算软件：miniconda、pytorch、7z、tensoflow等等
 
 ```bash/home/$USER=/home/$USER
 bash /home/$USER/init_script/cpu_software.sh
