@@ -45,8 +45,9 @@ ssh-keyscan -t rsa -H github.com >> ~/.ssh/known_hosts
 # 安装vim 插件
 # vim +PlugInstall +qall
 
-# 安装nvim插件
-nvim  +'PlugInstall --sync' +'PlugUpdate' +qa
+# 安装vim插件
+vim  +'PlugInstall --sync' +'PlugUpdate' +qa
+# nvim  +'PlugInstall --sync' +'PlugUpdate' +qa
 # 会自动安装各个插件，其中YouCompleteMe需要编译，会自动完成，编译无需sudo权限
 # 编译nvim的YouCompleteMe, 不需要事先安装nvim的python支持 `pip install neovim`
     # 编译无需此python支持，但使用YouCompleteMe需要
