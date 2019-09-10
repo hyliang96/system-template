@@ -7,6 +7,7 @@
 /ENV/localENV/miniconda*/
 /trash/
 /init_script/Anaconda*
+/init_script/Miniconda*
 /backup_before_install/
 
 
