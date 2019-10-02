@@ -5,5 +5,5 @@
 # 而后ssh登录服务器，则加载之
 
 
-[ $DotFileDebug -ne 0 ] && echo .zprofile
+[ $DotFileDebug -ne 0 ] && echo .zprofile >&2
 [ -f ~/.shell_config/.login ] && . ~/.shell_config/.login

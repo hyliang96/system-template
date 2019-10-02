@@ -1,17 +1,7 @@
 #!/bin/bash
-[ $DotFileDebug -ne 0 ] && echo local .bash_aliases
+[ $DotFileDebug -ne 0 ] && echo local .bash_aliases >&2
 
 [ -f $share_shell_config/.aliases ] && . $share_shell_config/.aliases
-
-# ------------------ 软件 ---------------------------
-# 搭建shadowsocks服务器
-# if [ -f $server_script/my_sshost.sh ]; then
-    # . $server_script/my_sshost.sh
-# else
-    # echo "$server_script/my_sshost.sh not found; unable to build shadowsocks server"
-# fi
-
-
 
 
 [ $DotFileDebug -ne 0 ] && echo end local aliases

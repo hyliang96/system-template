@@ -2,7 +2,7 @@
 
 # 一切bash使用，都加载之
 DotFileDebug=0
-[ $DotFileDebug -ne 0 ] && echo .bash_env
+[ $DotFileDebug -ne 0 ] && echo .bash_env >&2
 
 shopt -s expand_aliases # 启用alias; 不然非登录式非交互的bash是默认不开启的
 [ -f ~/.env ] && . ~/.env
