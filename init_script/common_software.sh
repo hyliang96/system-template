@@ -15,8 +15,8 @@ bash Miniconda3-latest-Linux-x86_64.sh -p $install_path/ENV/localENV/anaconda3 -
 
 # 默认环境是python3.6，pip=pip3=pip3.7
 pip install -U pip
-#·pip·install·pretty_errors·&&·python·-m·pretty_errors·-s·-p·#·等他收我的pull·request
-pip install git+https://github.com/hyliang96/PrettyErrors && \
+
+pip install pretty_errors && \
 python -m pretty_errors -s -p
 pretty_errors_config="$(py -m pretty_errors -f | grep pretty_errors.pth)"
 [ -f "$pretty_errors_config" ] && ln -sf $shareENV/app_config/pretty_errors.pth "$pretty_errors_config"
