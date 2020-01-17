@@ -24,6 +24,8 @@ apt -y install cmake
 apt -y install python-dev
 apt -y install build-essential
 
+# git的文本界面
+# apt -y install tig
 # -------------------------------------------------------------------------
 # 安装nvc server及依赖
 apt -y install tightvncserver xfce4 xfce4-goodies powerline fonts-powerline ttf-wqy-zenhei  autocutsel fcitx-googlepinyin
