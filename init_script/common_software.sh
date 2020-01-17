@@ -12,6 +12,8 @@ bash Miniconda3-latest-Linux-x86_64.sh -p $install_path/ENV/localENV/anaconda3 -
 
 # 安装notebook的配色
 # conda install -c conda-forge jupyterthemes
+# git的文本交互界面
+conda install -c asmeurer tig -y
 
 # 默认环境是python3.6，pip=pip3=pip3.7
 pip install -U pip
