@@ -39,62 +39,25 @@ sudo adduser <用户名>
 #### 加管理员权限
 
 ```bash
-sudo vim /etc/sudoers
+usermod -aG sudo <用户名>
 ```
 
-```bash
-# User privilege specification
-root ALL=(ALL) ALL
-<用户名> ALL=(ALL) ALL
-```
-
-退出vim按
-
-```
-:wq!
-```
-
-#### 时区修改
-
-- 查看时间
-
-```bash
-date "+%Y-%m-%d-%H:%M:%S"
-# 返回 2019-03-06-16:52:38
-```
-
-- 个人用户修改
-
-获得修改指令
-
-```bash
-tzselect
-```
-
-一路选择地区，直到得到返回`export TZ='Asia/Shanghai'`，即为修改指令。
-
-将修改指令加到`~/.zshenv`，则每次用户使用zshenv，时间为此种时间。
-
-- 整个系统修改
-
-```bash
-date -R # 再次查看时间
-sudo cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
-date -R # 再次查看时间，确认已经修改为北京时间
-sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不准
-```
-
-#### 安装软件
-
-请使用sudo运行，以安装各种依赖软件
-
-```bash
-sudo bash /home/$USER/init_script/sudo_install.sh
-```
+>    （其他方法）
+>
+>     ```bash
+>     sudo vim /etc/sudoers
+>     ```
+>
+>   加入
+>
+>     ```bash
+>     # User privilege specification
+>     root ALL=(ALL) ALL
+>     <用户名> ALL=(ALL) ALL
+>     ```
+>
 
 ### 备份
-
-下文
 
 
 把目录清空
@@ -117,6 +80,18 @@ rm /home/$USER/.* -rf
 
 ### 安装
 
+下载本repo
+
+```bash
+git clone https://github.com/hyliang96/system-template.git
+```
+
+安装系统软件：请使用sudo运行，以安装各种依赖软件
+
+```bash
+sudo bash /home/$USER/init_script/sudo_install.sh
+```
+
 * 安装系统环境：
   * 文件组织、符号链接
   * shell的dotfiles、git/tmux/ipython/jupyter的配置、zsh、vim、
@@ -125,7 +100,6 @@ rm /home/$USER/.* -rf
 
 ```bash
 cd /home/$USER
-git clone https://github.com/hyliang96/system-template.git
 cp /home/$USER/system-template/{*,.*} /home/$USER -r
 rm /home/$USER/system-template -rf
 ```
@@ -138,7 +112,7 @@ bash /home/$USER/init_script/install_sys.sh
 
 * 安装科学计算软件：miniconda、pytorch、7z、tensoflow等等
 
-```bash/home/$USER=/home/$USER
+```bash
 bash /home/$USER/init_script/cpu_software.sh
 # 或
 bash /home/$USER/init_script/gpu_software.sh
@@ -167,7 +141,7 @@ ssh-copy-id [-i ~/.ssh/<私钥名>] <服务器别名>
 
 ### 安装shadowsocks服务器
 
-```
+```bash
 s3 install
 ```
 
@@ -322,6 +296,38 @@ zsh 在上述情况都会自动加载`~/.zshenv`，无需另外设置
 | .zshenv         | ENV/CONF/.zshenv            |
 
 # 附录
+
+## 时区修改
+
+- 查看时间
+
+```bash
+date "+%Y-%m-%d-%H:%M:%S"
+# 返回 2019-03-06-16:52:38
+```
+
+- 个人用户修改
+
+获得修改指令
+
+```bash
+tzselect
+```
+
+一路选择地区，直到得到返回`export TZ='Asia/Shanghai'`，即为修改指令。
+
+将修改指令加到`~/.zshenv`，则每次用户使用zshenv，时间为此种时间。
+
+- 整个系统修改
+
+```bash
+date -R # 再次查看时间
+sudo cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
+date -R # 再次查看时间，确认已经修改为北京时间
+sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不准
+```
+
+### 
 
 ## shell的状态类型
 

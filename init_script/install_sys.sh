@@ -5,6 +5,14 @@
 here=$(cd "$(dirname "${BASH_SOURCE[0]-$0}")"; pwd)
 . $here/install_path.sh
 
+
+# 整个系统修改
+date -R # 再次查看时间
+# `tzselect` 命令,一路选地区,获得时区名称 "Asia/Shanghai" 
+sudo cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
+date -R # 再次查看时间，确认已经修改为北京时间
+sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不准
+
 # # git clone
 # cd $install_path
 # git clone https://github.com/hyliang96/system-template.git
