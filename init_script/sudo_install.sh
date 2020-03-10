@@ -13,6 +13,7 @@ apt -y install netcat-traditional
 # 所有情况都要装以下软件
 # 安装vim-gnome
 apt -y install vim-gnome
+apy -y install python python3
 
 # 安装neovim的python依赖
 apt -y install python3-pip
