@@ -36,6 +36,7 @@ cd $shareENV
 git remote set-url origin git@github.com:hyliang96/shareENV
 cd $serverENV
 git remote set-url origin git@github.com:hyliang96/serverENV
+mkdir -p $serverENV/serverENV_private
 cd $serverENV/serverENV_private
 git remote set-url origin git@github.com:hyliang96/serverENV_private
 cd  $shareENV/app_config/vim
