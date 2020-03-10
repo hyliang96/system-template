@@ -17,7 +17,7 @@ apy -y install python3
 
 # 安装neovim的python依赖
 apt -y install python3-pip
-pip3 -y install neovim
+pip3 install neovim
 
 # YouCompleteMe 的依赖 如下
 # apt -y install python3 # python2,3 都装了
