@@ -125,7 +125,7 @@ bash /home/$USER/init_script/gpu_software.sh
 * 如果vim中的YouCompleteMe用不了，就得自己手动编译
 
 ```bash
-$shareENV/app_config/vim/.vim/plugged/YouCompleteMe/install.py
+python3 $shareENV/app_config/vim/.vim/plugged/YouCompleteMe/install.py
 ```
 
 ### ssh设置

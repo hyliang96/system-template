@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo -n 'Github Password: ' ; read -s github_passwd ; echo
+# echo -n 'User Password: ' ; read -s user_passwd ; echo
+
 # get absoltae path to the dir this is in, work in bash, zsh
 # if you want transfer symbolic link to true path, just change `pwd` to `pwd -P`
 here=$(cd "$(dirname "${BASH_SOURCE[0]-$0}")"; pwd)
@@ -26,7 +29,7 @@ git clone https://github.com/hyliang96/serverENV.git  $install_path/ENV/serverEN
 # 改home，方便后面的安装
 .  $install_path/ENV/CONF/.zshenv
 
-git clone https://github.com/hyliang96/serverENV_private.git  $serverENV/serverENV_private
+git clone https://hyliang96@${github_passwd}github.com/hyliang96/serverENV_private.git  $serverENV/serverENV_private
 git clone https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
 git clone https://github.com/hyliang96/admin_tool.git $serverENV/admin_tool
 
