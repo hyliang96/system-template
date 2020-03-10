@@ -61,3 +61,4 @@ conda/
 
 /ENV/CONF/.zlua
 /ENV/CONF/.gnupg
+/ENV/CONF/.fzf
