@@ -26,6 +26,10 @@ git clone https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
 git clone https://github.com/hyliang96/admin_tool.git $serverENV/admin_tool
 
 # 从https换成ssh的url，方便之后免密push和pull
+cd /home/${USER}
+if [[ "$(git remote show origin)" =~ 'hyliang96/system-template.git' ]]; then
+    git remote set-url origin git@github.com:hyliang96/system-template.git
+fi
 cd $shareENV
 git remote set-url origin git@github.com:hyliang96/shareENV
 cd $serverENV
