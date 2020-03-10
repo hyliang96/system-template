@@ -15,13 +15,17 @@ apt -y install netcat-traditional
 apt -y install vim-gnome
 
 # 安装neovim的python依赖
-apt -y install python-pip
-pip -y install neovim
+apt -y install python3-pip
+pip3 -y install neovim
 
 # YouCompleteMe 的依赖 如下
 # apt -y install python3 # python2,3 都装了
 apt -y install build-essential cmake python3-dev
 
+
+# -------------------------------------------------------------------------
+# zlua 的依赖
+apt -y install lua5.3
 
 # git的文本界面
 # apt -y install tig

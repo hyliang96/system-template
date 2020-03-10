@@ -80,7 +80,7 @@ rm /home/$USER/.* -rf
 
 ### 安装
 
-下载本repo
+*   下载本repo
 
 ```bash
 git clone https://github.com/hyliang96/system-template.git
@@ -91,7 +91,7 @@ rm /home/$USER/system-template -rf
 # vim ENV/CONF/.env               # 默认不是root用户，不用修改my=《/home/$USER》
 ```
 
-安装系统软件：请使用sudo运行，以安装各种依赖软件
+*   安装系统软件：请使用sudo运行，以安装各种依赖软件
 
 ```bash
 sudo bash /home/$USER/init_script/sudo_install.sh
@@ -103,11 +103,11 @@ sudo bash /home/$USER/init_script/sudo_install.sh
 >   sudo apt-get --purge autoremove
 >   ```
 
-* 安装系统环境：
-  * 文件组织、符号链接
-  * shell的dotfiles、git/tmux/ipython/jupyter的配置、zsh、vim、
-  * 翻墙服务端和客户端
-  * 登录登出同步共享文件的脚本
+*   安装系统环境：
+    *   文件组织、符号链接
+    *   shell的dotfiles、git/tmux/ipython/jupyter的配置、zsh、vim、
+    *   翻墙服务端和客户端
+    *   登录登出同步共享文件的脚本
 
 ```bash
 bash /home/$USER/init_script/install_sys.sh
