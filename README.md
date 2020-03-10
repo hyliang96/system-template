@@ -84,6 +84,11 @@ rm /home/$USER/.* -rf
 
 ```bash
 git clone https://github.com/hyliang96/system-template.git
+cd /home/$USER
+cp /home/$USER/system-template/{*,.*} /home/$USER -r
+rm /home/$USER/system-template -rf
+# vim init_script/install_path.sh # 默认不是root用户，不用填写安装路径
+# vim ENV/CONF/.env               # 默认不是root用户，不用修改my=《/home/$USER》
 ```
 
 安装系统软件：请使用sudo运行，以安装各种依赖软件
@@ -99,14 +104,6 @@ sudo bash /home/$USER/init_script/sudo_install.sh
   * 登录登出同步共享文件的脚本
 
 ```bash
-cd /home/$USER
-cp /home/$USER/system-template/{*,.*} /home/$USER -r
-rm /home/$USER/system-template -rf
-```
-
-```bash
-# vi init_script/install_path.sh # 默认不是root用户，不用填写安装路径
-# vi ENV/CONF/.env               # 默认不是root用户，不用修改my=《/home/$USER》
 bash /home/$USER/init_script/install_sys.sh
 ```
 
