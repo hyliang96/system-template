@@ -8,7 +8,7 @@ here=$(cd "$(dirname "${BASH_SOURCE[0]-$0}")"; pwd)
 
 # 整个系统修改
 date -R # 再次查看时间
-# `tzselect` 命令,一路选地区,获得时区名称 "Asia/Shanghai" 
+# `tzselect` 命令,一路选地区,获得时区名称 "Asia/Shanghai"
 sudo cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 date -R # 再次查看时间，确认已经修改为北京时间
 sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不准
@@ -18,23 +18,21 @@ sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不
 # git clone https://github.com/hyliang96/system-template.git
 # cp  $install_path/system-template/{*,.*} $install_path
 
-git clone https://github.com/hyliang96/shareENV.git  $install_path/ENV/shareENV
 git clone https://github.com/hyliang96/serverENV.git  $install_path/ENV/serverENV
-
+git clone https://github.com/hyliang96/serverENV_private.git  $serverENV/serverENV_private
+git clone https://github.com/hyliang96/shareENV.git  $install_path/ENV/shareENV
+git clone https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
+git clone https://github.com/hyliang96/admin_tool.git $serverENV/admin_tool
 
 # 更换链接
 # bash $here/add_link.sh
 # 改home，方便后面的安装
 .  $install_path/ENV/CONF/.zshenv
 
-git clone https://github.com/hyliang96/serverENV_private.git  $serverENV/serverENV_private
-git clone https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
-git clone https://github.com/hyliang96/admin_tool.git $serverENV/admin_tool
-
 # 从https换成ssh的url，方便之后免密push和pull
 cd $serverENV
 git remote set-url origin git@github.com:hyliang96/serverENV
-mkdir -p $serverENV/serverENV_private
+# mkdir -p $serverENV/serverENV_private
 cd $serverENV/serverENV_private
 git remote set-url origin git@github.com:hyliang96/serverENV_private
 cd $shareENV
