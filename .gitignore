@@ -62,3 +62,5 @@ conda/
 /ENV/CONF/.zlua
 /ENV/CONF/.gnupg
 /ENV/CONF/.fzf
+/ENV/CONF/.condarc
+/.sudo_as_admin_successful
