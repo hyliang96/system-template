@@ -13,7 +13,7 @@ apt -y install netcat-traditional
 # 所有情况都要装以下软件
 # 安装vim-gnome
 apt -y install vim-gnome
-apy -y install python python3
+apy -y install python3
 
 # 安装neovim的python依赖
 apt -y install python3-pip
@@ -23,6 +23,8 @@ pip3 -y install neovim
 # apt -y install python3 # python2,3 都装了
 apt -y install build-essential cmake python3-dev
 
+# 编译 fuzzyMatchC 的依赖
+apt -y install python python-dev
 
 # -------------------------------------------------------------------------
 # zlua 的依赖
