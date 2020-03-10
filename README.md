@@ -97,6 +97,12 @@ rm /home/$USER/system-template -rf
 sudo bash /home/$USER/init_script/sudo_install.sh
 ```
 
+>   删除所有apt软件：【小心使用】
+>
+>   ```bash
+>   sudo apt-get --purge autoremove
+>   ```
+
 * 安装系统环境：
   * 文件组织、符号链接
   * shell的dotfiles、git/tmux/ipython/jupyter的配置、zsh、vim、

@@ -19,10 +19,9 @@ apt -y install python-pip
 pip -y install neovim
 
 # YouCompleteMe 的依赖 如下
-apt -y install python python3 # python2,3 都装了
-apt -y install cmake
-apt -y install python-dev python3-dev
-apt -y install build-essential
+# apt -y install python3 # python2,3 都装了
+apt -y install build-essential cmake python3-dev
+
 
 # git的文本界面
 # apt -y install tig
