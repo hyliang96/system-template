@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
+
+# 整个系统修改
+date -R # 再次查看时间
+# `tzselect` 命令,一路选地区,获得时区名称 "Asia/Shanghai"
+cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
+date -R # 再次查看时间，确认已经修改为北京时间
+hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不准
+
+
+
+
 apt update
 # -------------------------------------------------------------------------
 # Debian 没有预装以下软件，需要装以下软件；Ubuntu 预装了，跳过这部
