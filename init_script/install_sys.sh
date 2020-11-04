@@ -46,6 +46,7 @@ cd $install_path
 
 # 创建ssh密钥
 mkdir ~/.ssh
+chmod 700 ~/.ssh
 ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
 # 将github的公钥添加到本地
 ssh-keyscan -t rsa -H github.com >> ~/.ssh/known_hosts
