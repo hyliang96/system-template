@@ -100,7 +100,7 @@ sudo bash /home/$USER/init_script/sudo_install.sh
 >   debug时, 可能需要删除上面安装的所有apt软件：【小心使用】
 >
 >   ```bash
->   sudo apt remove tmux netcat-traditional vim-gnome python python3 python3-pip neovim build-essential cmake python-dev python3-dev lua5.3 tightvncserver xfce4 xfce4-goodies powerline fonts-powerline ttf-wqy-zenhei autocutsel fcitx-googlepinyin
+>   sudo apt remove tmux netcat-traditional python python3 python3-pip neovim build-essential cmake python-dev python3-dev lua5.3 tightvncserver xfce4 xfce4-goodies powerline fonts-powerline ttf-wqy-zenhei autocutsel fcitx-googlepinyin
 >   sudo apt --purge autoremove
 >   ```
 
