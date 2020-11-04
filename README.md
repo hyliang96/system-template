@@ -128,7 +128,19 @@ bash /home/$USER/init_script/gpu_software.sh
 python3 $shareENV/app_config/vim/.vim/plugged/YouCompleteMe/install.py
 ```
 
-### 创建github token
+### github 授权
+
+#### 创建github的ssh公钥
+
+复制以下命令的输出
+
+```bash
+cat  ~/.ssh/id_rsa.pub
+```
+
+访问[创建新ssh公钥](https://github.com/settings/ssh/new), `Title` 写服务器的hostname, `Key` 内将上述复制内容粘贴, 然后点 `Add Ssh Key`.
+
+#### 创建github token
 
 访问 [新建github token](https://github.com/settings/tokens/new), 在`Note`栏填写备注, 仅勾选`repo`大类全部, 然后点`Generate token`. 
 
@@ -140,6 +152,9 @@ echo <toke-内容>    > /home/$USER/.ssh/github/github.token
 ```
 
 token-内容例如 `a5r3ka43de1238as57ddc1231afs123c1sfd5rtd`.
+
+
+
 
 ### ssh设置
 
