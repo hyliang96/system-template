@@ -30,7 +30,7 @@ pip install jupyterthemes
 pip install shadowsocks
 mkdir /home/${USER}/ENV/localENV/log/{polipo,shadowsocks}
 # 安装neovim的python支持
-pip install neovim
+pip install pynvim # neovim is renamed as pynvim
 
 # conda install -c bioconda p7zip --yes
 # 装 7z, 7za, 7zr ；-yes 表示不要问yes还是no，直接装
