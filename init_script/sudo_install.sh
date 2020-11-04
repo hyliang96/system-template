@@ -27,13 +27,13 @@ apt -y install netcat-traditional
 # 升级vim
 apt -y install vim
 
-# 安装vim-gnome
-# apt -y install vim-gnome
+# 安装neovim
+apt -y install neovim
 
 # 安装neovim的python依赖
-apy -y install python3
+apt -y install python3
 apt -y install python3-pip
-sudo ln -s /usr/bin/pip3 /usr/bin/pip
+ln -s /usr/bin/pip3 /usr/bin/pip
 pip3 install pynvim # neovim is renamed as pynvim
 
 # YouCompleteMe 的依赖 如下
