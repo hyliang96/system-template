@@ -97,7 +97,7 @@ rm /home/$USER/system-template -rf
 sudo bash /home/$USER/init_script/sudo_install.sh
 ```
 
->   删除所有apt软件：【小心使用】
+>   debug时, 可能需要删除上面安装的所有apt软件：【小心使用】
 >
 >   ```bash
 >   sudo apt remove tmux netcat-traditional vim-gnome python python3 python3-pip neovim build-essential cmake python-dev python3-dev lua5.3 tightvncserver xfce4 xfce4-goodies powerline fonts-powerline ttf-wqy-zenhei autocutsel fcitx-googlepinyin
@@ -127,6 +127,19 @@ bash /home/$USER/init_script/gpu_software.sh
 ```bash
 python3 $shareENV/app_config/vim/.vim/plugged/YouCompleteMe/install.py
 ```
+
+### 创建github token
+
+访问 [新建github token](https://github.com/settings/tokens/new), 在`Note`栏填写备注, 仅勾选`repo`大类全部, 然后点`Generate token`. 
+
+网页上生成了token, 点复制图标, 在服务器上 
+
+```bash
+mkdir /home/$USER/.ssh/github
+echo <toke-内容>    > /home/$USER/.ssh/github/github.token
+```
+
+token-内容例如 `a5r3ka43de1238as57ddc1231afs123c1sfd5rtd`.
 
 ### ssh设置
 
