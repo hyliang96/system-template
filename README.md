@@ -38,7 +38,7 @@ sudo adduser <用户名>
 #### 加管理员权限
 
 ```bash
-usermod -aG sudo <用户名>
+sudo usermod -aG sudo <用户名>
 ```
 
 >    （其他方法）
