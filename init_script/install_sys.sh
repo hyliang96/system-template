@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo -n 'Your User '
+# 更换zsh
+chsh -s `which zsh`
+
 echo -n 'Github Password: ' ; read -s github_passwd ; echo
 # echo -n 'User Password: ' ; read -s user_passwd ; echo
 
@@ -72,8 +76,7 @@ vim -u ~/.vimrc.bundles +'PlugInstall --sync' +'PlugUpdate' +qa
 
 unset -v here
 
-# 更换zsh
-chsh -s `which zsh`
+
 
 # 初次登录zsh以便安装zsh
 zsh
