@@ -71,8 +71,8 @@ mv /home/$USER/.*  /home/$USER/backup_before_install
 或者全部清空【危险】
 
 ```bash
-rm /home/$USER/* -rf
-rm /home/$USER/.* -rf
+ls -d1 /home/$USER/{*,.*}  | grep -vE '/[\.]{1,2}$' | xargs rm -rf
+# rm /home/$USER/{*,.*} -rf
 ```
 
 重新登录，进入bash
@@ -84,7 +84,8 @@ rm /home/$USER/.* -rf
 ```bash
 git clone https://github.com/hyliang96/system-template.git
 cd /home/$USER
-cp /home/$USER/system-template/{*,.*} /home/$USER -r
+rsync -aq --progress /home/$USER/system-template/ /home/$USER
+# cp /home/$USER/system-template/{*,.*} /home/$USER -r
 rm /home/$USER/system-template -rf
 # vim init_script/install_path.sh # 默认不是root用户，不用填写安装路径
 # vim ENV/CONF/.env               # 默认不是root用户，不用修改my=《/home/$USER》
