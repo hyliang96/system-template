@@ -107,14 +107,14 @@ sudo bash /home/$USER/init_script/sudo_install.sh
 *   安装系统环境：
     *   文件组织、符号链接
     *   shell的dotfiles、git/tmux/ipython/jupyter的配置、zsh、vim、
-    *   翻墙服务端和客户端
+    *   科学上网的服务端和客户端
     *   登录登出同步共享文件的脚本
 
 ```bash
 bash /home/$USER/init_script/install_sys.sh
 ```
 
-* 安装科学计算软件：miniconda、pytorch、7z、tensoflow等等
+* 安装科学计算软件：miniconda、pytorch、7z、tensoflow等等, 用于搭建科学上网的vps 则无需此步骤.
 
 ```bash
 bash /home/$USER/init_script/cpu_software.sh
