@@ -166,12 +166,16 @@ ssh-copy-id [-i ~/.ssh/<私钥名>] <服务器别名>
 
 私钥名可缺省，缺省值为`id_rsa`
 
+### 配置代理服务端
 
-- 服务器上
+#### v2ray七合一一键脚本安装 [推荐]
 
-当确认服务器运行正常，将其`.ssh/id_ras.pub`公钥添加到github上，则可以同步shareENV、serverENV
+```bash
+v2host
+```
+执行过程中需要输入sudo密码
 
-### 安装shadowsocks服务器
+#### 安装shadowsocks服务器
 
 ```bash
 s3 install
