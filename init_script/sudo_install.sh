@@ -34,7 +34,7 @@ apt -y install neovim
 apt -y install python3
 apt -y install python3-pip
 ln -s /usr/bin/pip3 /usr/bin/pip
-pip3 install pynvim # neovim is renamed as pynvim
+sudo pip3 install pynvim # neovim is renamed as pynvim
 
 # YouCompleteMe 的依赖 如下
 # apt -y install python3 # python2,3 都装了
