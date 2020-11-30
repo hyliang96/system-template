@@ -25,3 +25,6 @@ if [[ $- = *i* ]]; then
     [ -f ~/.shell_config/.aliases ] &&  . ~/.shell_config/.aliases
 fi
 
+#  acme: v2ray七合一 一键脚本用来更新证书的工具
+# 七合一脚本 (https://github.com/mack-a/v2ray-agent)
+. "/home/hyliang/ENV/CONF/.acme.sh/acme.sh.env"

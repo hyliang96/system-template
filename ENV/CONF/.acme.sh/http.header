@@ -1,0 +1,9 @@
+HTTP/2 200 
+server: nginx
+date: Mon, 30 Nov 2020 12:47:28 GMT
+content-type: application/json
+content-length: 658
+cache-control: public, max-age=0, no-cache
+x-frame-options: DENY
+strict-transport-security: max-age=604800
+

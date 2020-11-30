@@ -67,3 +67,4 @@ conda/
 /ENV/CONF/.vscode-server
 
 /ENV/CONF/Desktop/
+/ENV/CONF/.w3m
