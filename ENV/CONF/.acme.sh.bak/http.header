@@ -1,9 +1,0 @@
-HTTP/2 403 
-server: nginx
-date: Sun, 31 Jan 2021 10:57:27 GMT
-content-type: application/problem+json
-content-length: 136
-cache-control: public, max-age=0, no-cache
-link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
-replay-nonce: 0104RB8wh7Ja06eFCXYeEKExDYAJ5oBypgs9B0duZAe-cgg
-
