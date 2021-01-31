@@ -68,3 +68,4 @@ conda/
 
 /ENV/CONF/Desktop/
 /ENV/CONF/.w3m
+/ENV/CONF/.acme.sh/http.header
