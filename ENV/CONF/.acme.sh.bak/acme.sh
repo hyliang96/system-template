@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VER=2.8.8
+VER=2.8.9
 
 PROJECT_NAME="acme.sh"
 
@@ -159,6 +159,8 @@ _ZEROSSL_WIKI="https://github.com/acmesh-official/acme.sh/wiki/ZeroSSL.com-CA"
 _SERVER_WIKI="https://github.com/acmesh-official/acme.sh/wiki/Server"
 
 _PREFERRED_CHAIN_WIKI="https://github.com/acmesh-official/acme.sh/wiki/Preferred-Chain"
+
+_DNSCHECK_WIKI="https://github.com/acmesh-official/acme.sh/wiki/dnscheck"
 
 _DNS_MANUAL_ERR="The dns manual mode can not renew automatically, you must issue it again manually. You'd better use the other modes instead."
 
@@ -1722,6 +1724,14 @@ _mktemp() {
   _err "Can not create temp file."
 }
 
+#clear all the https envs to cause _inithttp() to run next time.
+_resethttp() {
+  __HTTP_INITIALIZED=""
+  _ACME_CURL=""
+  _ACME_WGET=""
+  ACME_HTTP_NO_REDIRECTS=""
+}
+
 _inithttp() {
 
   if [ -z "$HTTP_HEADER" ] || ! touch "$HTTP_HEADER"; then
@@ -1737,7 +1747,10 @@ _inithttp() {
   fi
 
   if [ -z "$_ACME_CURL" ] && _exists "curl"; then
-    _ACME_CURL="curl -L --silent --dump-header $HTTP_HEADER "
+    _ACME_CURL="curl --silent --dump-header $HTTP_HEADER "
+    if [ -z "$ACME_HTTP_NO_REDIRECTS" ]; then
+      _ACME_CURL="$_ACME_CURL -L "
+    fi
     if [ "$DEBUG" ] && [ "$DEBUG" -ge "2" ]; then
       _CURL_DUMP="$(_mktemp)"
       _ACME_CURL="$_ACME_CURL --trace-ascii $_CURL_DUMP "
@@ -1756,6 +1769,9 @@ _inithttp() {
 
   if [ -z "$_ACME_WGET" ] && _exists "wget"; then
     _ACME_WGET="wget -q"
+    if [ "$ACME_HTTP_NO_REDIRECTS" ]; then
+      _ACME_WGET="$_ACME_WGET --max-redirect 0 "
+    fi
     if [ "$DEBUG" ] && [ "$DEBUG" -ge "2" ]; then
       _ACME_WGET="$_ACME_WGET -d "
     fi
@@ -3944,6 +3960,8 @@ _check_dns_entries() {
   _end_time="$(_math "$_end_time" + 1200)" #let's check no more than 20 minutes.
 
   while [ "$(_time)" -le "$_end_time" ]; do
+    _info "You can use '--dnssleep' to disable public dns checks."
+    _info "See: $_DNSCHECK_WIKI"
     _left=""
     for entry in $dns_entries; do
       d=$(_getfield "$entry" 1)
@@ -6087,7 +6105,7 @@ _installalias() {
 
 }
 
-# nocron confighome noprofile
+# nocron confighome noprofile accountemail
 install() {
 
   if [ -z "$LE_WORKING_DIR" ]; then
@@ -6097,6 +6115,8 @@ install() {
   _nocron="$1"
   _c_home="$2"
   _noprofile="$3"
+  _accountemail="$4"
+
   if ! _initpath; then
     _err "Install failed."
     return 1
@@ -6213,6 +6233,10 @@ install() {
         fi
       done
     fi
+  fi
+
+  if [ "$_accountemail" ]; then
+    _saveaccountconf "ACCOUNT_EMAIL" "$_accountemail"
   fi
 
   _info OK
@@ -6493,7 +6517,7 @@ Parameters:
   --cert-home <directory>           Specifies the home dir to save all the certs, only valid for '--install' command.
   --config-home <directory>         Specifies the home dir to save all the configurations.
   --useragent <string>              Specifies the user agent string. it will be saved for future use too.
-  -m, --accountemail <email>        Specifies the account email, only valid for the '--install' and '--update-account' command.
+  -m, --email <email>               Specifies the account email, only valid for the '--install' and '--update-account' command.
   --accountkey <file>               Specifies the account key path, only valid for the '--install' command.
   --days <ndays>                    Specifies the days to renew the cert when using '--issue' command. The default value is $DEFAULT_RENEW days.
   --httpport <port>                 Specifies the standalone listening port. Only valid if the server is behind a reverse proxy or load balancer.
@@ -6504,9 +6528,9 @@ Parameters:
   --insecure                        Do not check the server certificate, in some devices, the api server's certificate may not be trusted.
   --ca-bundle <file>                Specifies the path to the CA certificate bundle to verify api server's certificate.
   --ca-path <directory>             Specifies directory containing CA certificates in PEM format, used by wget or curl.
-  --nocron                          Only valid for '--install' command, which means: do not install the default cron job.
+  --no-cron                         Only valid for '--install' command, which means: do not install the default cron job.
                                     In this case, the certs will not be renewed automatically.
-  --noprofile                       Only valid for '--install' command, which means: do not install aliases to user profile.
+  --no-profile                      Only valid for '--install' command, which means: do not install aliases to user profile.
   --no-color                        Do not output color text.
   --force-color                     Force output of color text. Useful for non-interactive use with the aha tool for HTML E-Mails.
   --ecc                             Specifies to use the ECC cert. Valid for '--install-cert', '--renew', '--revoke', '--to-pkcs12' and '--create-csr'
@@ -6544,18 +6568,17 @@ Parameters:
 "
 }
 
-# nocron noprofile
-_installOnline() {
+installOnline() {
   _info "Installing from online archive."
-  _nocron="$1"
-  _noprofile="$2"
-  if [ ! "$BRANCH" ]; then
-    BRANCH="master"
+
+  _branch="$BRANCH"
+  if [ -z "$_branch" ]; then
+    _branch="master"
   fi
 
-  target="$PROJECT/archive/$BRANCH.tar.gz"
+  target="$PROJECT/archive/$_branch.tar.gz"
   _info "Downloading $target"
-  localname="$BRANCH.tar.gz"
+  localname="$_branch.tar.gz"
   if ! _get "$target" >$localname; then
     _err "Download error."
     return 1
@@ -6567,9 +6590,9 @@ _installOnline() {
       exit 1
     fi
 
-    cd "$PROJECT_NAME-$BRANCH"
+    cd "$PROJECT_NAME-$_branch"
     chmod +x $PROJECT_ENTRY
-    if ./$PROJECT_ENTRY install "$_nocron" "" "$_noprofile"; then
+    if ./$PROJECT_ENTRY --install "$@"; then
       _info "Install success!"
       _initpath
       _saveaccountconf "UPGRADE_HASH" "$(_getUpgradeHash)"
@@ -6577,7 +6600,7 @@ _installOnline() {
 
     cd ..
 
-    rm -rf "$PROJECT_NAME-$BRANCH"
+    rm -rf "$PROJECT_NAME-$_branch"
     rm -f "$localname"
   )
 }
@@ -6605,7 +6628,7 @@ upgrade() {
     [ -z "$FORCE" ] && [ "$(_getUpgradeHash)" = "$(_readaccountconf "UPGRADE_HASH")" ] && _info "Already uptodate!" && exit 0
     export LE_WORKING_DIR
     cd "$LE_WORKING_DIR"
-    _installOnline "nocron" "noprofile"
+    installOnline "--nocron" "--noprofile"
   ); then
     _info "Upgrade success!"
     exit 0
@@ -6649,8 +6672,8 @@ _checkSudo() {
       return 0
     fi
     if [ -n "$SUDO_COMMAND" ]; then
-      #it's a normal user doing "sudo su", or `sudo -i` or `sudo -s`
-      _endswith "$SUDO_COMMAND" /bin/su || grep "^$SUDO_COMMAND\$" /etc/shells >/dev/null 2>&1
+      #it's a normal user doing "sudo su", or `sudo -i` or `sudo -s`, or `sudo su acmeuser1`
+      _endswith "$SUDO_COMMAND" /bin/su || _contains "$SUDO_COMMAND" "/bin/su " || grep "^$SUDO_COMMAND\$" /etc/shells >/dev/null 2>&1
       return $?
     fi
     #otherwise
@@ -6784,6 +6807,11 @@ _process() {
       ;;
     --install)
       _CMD="install"
+      ;;
+    --install-online)
+      shift
+      installOnline "$@"
+      return
       ;;
     --uninstall)
       _CMD="uninstall"
@@ -7059,9 +7087,9 @@ _process() {
       USER_AGENT="$_useragent"
       shift
       ;;
-    -m | --accountemail)
+    -m | --email | --accountemail)
       _accountemail="$2"
-      ACCOUNT_EMAIL="$_accountemail"
+      export ACCOUNT_EMAIL="$_accountemail"
       shift
       ;;
     --accountkey)
@@ -7104,10 +7132,10 @@ _process() {
       CA_PATH="$_ca_path"
       shift
       ;;
-    --nocron)
+    --no-cron | --nocron)
       _nocron="1"
       ;;
-    --noprofile)
+    --no-profile | --noprofile)
       _noprofile="1"
       ;;
     --no-color)
@@ -7327,7 +7355,7 @@ _process() {
   fi
   _debug "Running cmd: ${_CMD}"
   case "${_CMD}" in
-  install) install "$_nocron" "$_confighome" "$_noprofile" ;;
+  install) install "$_nocron" "$_confighome" "$_noprofile" "$_accountemail" ;;
   uninstall) uninstall "$_nocron" ;;
   upgrade) upgrade ;;
   issue)
@@ -7439,12 +7467,6 @@ _process() {
   fi
 
 }
-
-if [ "$INSTALLONLINE" ]; then
-  INSTALLONLINE=""
-  _installOnline
-  exit
-fi
 
 main() {
   [ -z "$1" ] && showhelp && return
