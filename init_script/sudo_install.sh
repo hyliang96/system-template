@@ -9,7 +9,7 @@ hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不准
 
 
 # 安装rg, 升级vim 所需的源
-add-apt-repository -y ppa:x4121/ripgrep
+# add-apt-repository -y ppa:x4121/ripgrep
 sudo add-apt-repository -y ppa:jonathonf/vim
 
 apt update
