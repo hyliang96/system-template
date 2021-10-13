@@ -91,7 +91,7 @@ rm /home/$USER/system-template -rf
 # vim ENV/CONF/.env               # 默认不是root用户，不用修改my=《/home/$USER》
 ```
 
-*   安装系统软件：请使用sudo运行，以安装各种依赖软件
+*   安装系统级别的软件：请使用sudo运行，以安装各种依赖软件
 
 ```bash
 sudo bash /home/$USER/init_script/sudo_install.sh
@@ -104,7 +104,7 @@ sudo bash /home/$USER/init_script/sudo_install.sh
 >   sudo apt --purge autoremove
 >   ```
 
-*   安装系统环境：
+*   安装用户级别的环境：
     *   文件组织、符号链接
     *   shell的dotfiles、git/tmux/ipython/jupyter的配置、zsh、vim、
     *   科学上网的服务端和客户端
@@ -114,7 +114,7 @@ sudo bash /home/$USER/init_script/sudo_install.sh
 bash /home/$USER/init_script/install_sys.sh
 ```
 
-* 安装科学计算软件：miniconda、pytorch、7z、tensoflow等等, 用于搭建科学上网的vps 则无需此步骤.
+* 安装用户级别的科学计算软件：miniconda、pytorch、7z、tensoflow等等, 用于搭建科学上网的vps 则无需此步骤.
 
 ```bash
 bash /home/$USER/init_script/cpu_software.sh
