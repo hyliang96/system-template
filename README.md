@@ -153,15 +153,12 @@ echo <toke-内容>    > /home/$USER/.ssh/github/github.token
 
 token-内容例如 `a5r3ka43de1238as57ddc1231afs123c1sfd5rtd`.
 
-
-
-
 ### ssh设置
 
 - 笔记本上
 
 ```bash
-ssh-copy-id [-i ~/.ssh/<私钥名>] <服务器别名>
+ssh-copy-id -o PreferredAuthentications=password [-i ~/.ssh/<私钥名>] <服务器别名>
 ```
 
 私钥名可缺省，缺省值为`id_rsa`
