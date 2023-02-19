@@ -1,3 +1,0 @@
-Usage:
-`pipreq install`   pip install requirements
-`pipreq save`      pip save to requirements
