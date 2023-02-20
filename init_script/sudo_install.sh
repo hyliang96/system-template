@@ -40,8 +40,8 @@ sudo pip3 install pynvim # neovim is renamed as pynvim
 # apt -y install python3 # python2,3 都装了
 apt -y install build-essential cmake python3-dev
 
-# 编译 fuzzyMatchC 的依赖
-apt -y install python python-dev
+# 编译 fuzzyMatchC 的依赖: 不需要再装python和python-dev了，因为上面装过python3和python3-dev了
+# apt -y install python python-dev
 
 # 安装 rg
 apt update
