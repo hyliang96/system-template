@@ -44,8 +44,7 @@ apt -y install build-essential cmake python3-dev
 # apt -y install python python-dev
 
 # 安装 rg
-apt update
-apt install ripgrep
+apt -y install ripgrep
 
 # -------------------------------------------------------------------------
 # zlua 的依赖
