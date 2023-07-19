@@ -142,7 +142,7 @@ cat  ~/.ssh/id_rsa.pub
 
 #### 创建github token
 
-访问 [新建github token](https://github.com/settings/tokens/new), 在`Note`栏填写备注, 仅勾选`repo`大类全部, 然后点`Generate token`. 
+访问 [新建github token](https://github.com/settings/tokens/new), 在`Note`栏填写备注, `Expiration`选`No expiration`, 仅勾选`repo`大类全部, 然后点`Generate token`. 
 
 网页上生成了token, 点复制图标, 在服务器上 
 
