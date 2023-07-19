@@ -13,7 +13,7 @@ hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不准
 # sudo add-apt-repository -y ppa:jonathonf/vim
 
 apt update
-apt upgrade
+apt -y upgrade
 # -------------------------------------------------------------------------
 # Debian 没有预装以下软件，需要装以下软件；Ubuntu 预装了，跳过这部
 # 以下软件系统没预装的话就装一个
