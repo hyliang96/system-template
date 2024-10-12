@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -n 'Your User '
+
 # 更换zsh
 chsh -s `which zsh`
 
@@ -25,7 +25,7 @@ git clone https://github.com/hyliang96/serverENV.git  $install_path/ENV/serverEN
 # 改home，方便后面的安装
 .  $install_path/ENV/CONF/.zshenv
 
-git clone https://hyliang96:${github_token}@github.com/hyliang96/serverENV_private.git  $serverENV/serverENV_private
+git clone https://${github_token}@github.com/hyliang96/serverENV_private.git  $serverENV/serverENV_private
 git clone https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
 git clone https://github.com/hyliang96/admin_tool.git $serverENV/admin_tool
 
