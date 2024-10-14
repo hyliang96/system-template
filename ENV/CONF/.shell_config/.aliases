@@ -1,7 +1,7 @@
 #!/bin/bash
-[ $DotFileDebug -ne 0 ] && echo local .bash_aliases >&2
+[ ! $DotFileDebug ] && DotFileDebug=0 # 若DotFileDebug未定义，则定义之
+[ $DotFileDebug -ne 0 ] && echo local .aliases >&2
 
 [ -f $share_shell_config/.aliases ] && . $share_shell_config/.aliases
 
-
-[ $DotFileDebug -ne 0 ] && echo end local aliases
+[ $DotFileDebug -ne 0 ] && echo local .aliases end >&2

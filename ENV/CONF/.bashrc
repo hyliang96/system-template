@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DotFileDebug=0
+[ ! $DotFileDebug ] && DotFileDebug=0 # 若DotFileDebug未定义，则定义之
 [ $DotFileDebug -ne 0 ] && echo lcoal .bashrc >&2
 
 # bash的交互 加载之
@@ -27,4 +27,4 @@ fi
 
 #  acme: v2ray七合一 一键脚本用来更新证书的工具
 # 七合一脚本 (https://github.com/mack-a/v2ray-agent)
-. "/home/hyliang/ENV/CONF/.acme.sh/acme.sh.env"
+# . "/home/$USER/ENV/CONF/.acme.sh/acme.sh.env"
