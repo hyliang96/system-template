@@ -58,8 +58,9 @@ sudo usermod -aG sudo <用户名>
 
 ### 备份
 
+HOME不为/home/$USER时，请修改下面命令中的/home/$USER为HOME的实际值。
 
-把目录清空
+把HOME目录全部移走备份
 
 ```bash
 rm /home/$USER/backup_before_install -rf
@@ -79,17 +80,23 @@ ls -d1 /home/$USER/{*,.*}  | grep -vE '/[\.]{1,2}$' | xargs rm -rf
 
 ### 安装
 
-*   下载本repo
+* 下载本repo
+
+HOME不为/home/$USER时，请修改下面命令中的/home/$USER为HOME的实际值。
 
 ```bash
-git clone https://github.com/hyliang96/system-template.git
-cd /home/$USER
-rsync -aq --progress /home/$USER/system-template/ /home/$USER
+git clone https://github.com/hyliang96/system-template.git /home/$USER
+# rsync -aq --progress /home/$USER/system-template/ /home/$USER
 # cp /home/$USER/system-template/{*,.*} /home/$USER -r
-rm /home/$USER/system-template -rf
-# vim init_script/install_path.sh # 默认不是root用户，不用填写安装路径
-# vim ENV/CONF/.env               # 默认不是root用户，不用修改my=《/home/$USER》
 ```
+
+* 修改安装路径
+
+HOME不为/home/$USER时，请修改install_path和my为HOME的实际值。
+
+`init_script/install_path.sh` : 默认 `install_path=/home/${USER}`
+
+`ENV/CONF/.env` : 默认 `my=/home/$USER`
 
 *   安装系统级别的软件：请使用sudo运行，以安装各种依赖软件
 
@@ -106,7 +113,7 @@ sudo bash /home/$USER/init_script/sudo_install.sh
 
 *   安装用户级别的环境：
     *   文件组织、符号链接
-    *   shell的dotfiles、git/tmux/ipython/jupyter的配置、zsh、vim、
+    *   shell的dotfiles、zsh/bash/git/tmux/ipython/jupyter/vim的配置
     *   科学上网的服务端和客户端
     *   登录登出同步共享文件的脚本
 
@@ -114,13 +121,16 @@ sudo bash /home/$USER/init_script/sudo_install.sh
 bash /home/$USER/init_script/install_sys.sh
 ```
 
-* 安装用户级别的科学计算软件：miniconda、pytorch、7z、tensoflow等等, 用于搭建科学上网的vps 则无需此步骤.
+* 安装用户级别的软件：
 
 ```bash
-bash /home/$USER/init_script/cpu_software.sh
-# 或
-bash /home/$USER/init_script/gpu_software.sh
+bash /home/$USER/init_script/software.sh
 ```
+
+运行时需要选择模式：
+    default: 只安装vim插件、切换默认shell为zsh, 如用于搭建科学上网的vps
+    cpu: 用于科学计算，安装default模式的软件 和anaconda、jupyter
+    gpu: 用于深度学习，安装cpu模式的软件 和torch, tensorflow
 
 * 如果vim中的YouCompleteMe用不了，就得自己手动编译
 
@@ -142,9 +152,9 @@ cat  ~/.ssh/id_rsa.pub
 
 #### 创建github token
 
-访问 [新建github token](https://github.com/settings/tokens/new), 在`Note`栏填写备注, `Expiration`选`No expiration`, 仅勾选`repo`大类全部, 然后点`Generate token`. 
+访问 [新建github token](https://github.com/settings/tokens/new), 在`Note`栏填写备注, `Expiration`选`No expiration`, 仅勾选`repo`大类全部, 然后点`Generate token`.
 
-网页上生成了token, 点复制图标, 在服务器上 
+网页上生成了token, 点复制图标, 在服务器上
 
 ```bash
 mkdir /home/$USER/.ssh/github
@@ -207,32 +217,32 @@ s3 install
 
 ```
 /home/$USER/
-	一堆软链接点文件，指向CONF下的文件，详见下[#软连接]
-	init_script/
-		系统环境安装脚本
-	ENV/
-		CONF/
-			一堆软链接点文件，指向shareENV、serverENV、localENV下的文件，详见下[#软连接]
-		shareENV/     ------- 一个repo，笔记本、服务器共用，每次登录登出时同步
-			local/
-				bin/
-				man/
-				...
-			script/
-			shell_config/
-				zsh、bash、所有shell通用的点文件
-			app_config/
-				tmux、ipython、jupyter通用的点文件
-		serverENV/    ------- 一个repo，服务器共用，每次登录登出时同步
-			(结构同shareENV/)
-			app_config/
-				.shadowsocks  : https://github.com/hyliang96/shadowsocks_ips、个人ss账号
-			nvim/             : neovim 的镜像及其解压文件夹
-			...
-		localENV/     ------- 一个文件夹，该服务器自己用的，不同步
-			(结构同shareENV/)
-		其他共享ENV ------- 一个repo，在我的一些电脑之间共用，每次登录登出时同步
-			(结构同shareENV/)
+    一堆软链接点文件，指向CONF下的文件，详见下[#软连接]
+    init_script/
+        系统环境安装脚本
+    ENV/
+        CONF/
+            一堆软链接点文件，指向shareENV、serverENV、localENV下的文件，详见下[#软连接]
+        shareENV/     ------- 一个repo，笔记本、服务器共用，每次登录登出时同步
+            local/
+                bin/
+                man/
+                ...
+            script/
+            shell_config/
+                zsh、bash、所有shell通用的点文件
+            app_config/
+                tmux、ipython、jupyter通用的点文件
+        serverENV/    ------- 一个repo，服务器共用，每次登录登出时同步
+            (结构同shareENV/)
+            app_config/
+                .shadowsocks  : https://github.com/hyliang96/shadowsocks_ips、个人ss账号
+            nvim/             : neovim 的镜像及其解压文件夹
+            ...
+        localENV/     ------- 一个文件夹，该服务器自己用的，不同步
+            (结构同shareENV/)
+        其他共享ENV ------- 一个repo，在我的一些电脑之间共用，每次登录登出时同步
+            (结构同shareENV/)
 ```
 
 ### 我设计的点文件的加载逻辑
@@ -351,7 +361,7 @@ date -R # 再次查看时间，确认已经修改为北京时间
 sudo hwclock --systohc # 修改硬件CMOS的时间，不然后面时间还是不准
 ```
 
-### 
+###
 
 ## shell的状态类型
 

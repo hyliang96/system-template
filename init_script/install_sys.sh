@@ -1,9 +1,6 @@
 #!/bin/bash
 
 
-# 更换zsh
-chsh -s `which zsh`
-
 echo -n 'Github Token: ' ; read -s github_token ; echo
 # echo -n 'User Password: ' ; read -s user_passwd ; echo
 
@@ -20,16 +17,14 @@ here=$(cd "$(dirname "${BASH_SOURCE[0]-$0}")"; pwd)
 git clone https://github.com/hyliang96/shareENV.git  $install_path/ENV/shareENV
 git clone https://github.com/hyliang96/serverENV.git  $install_path/ENV/serverENV
 
-# 更换链接
-# bash $here/add_link.sh
 # 改home，方便后面的安装
-.  $install_path/ENV/CONF/.zshenv
+.  $install_path/ENV/CONF/.env
 
 git clone https://${github_token}@github.com/hyliang96/serverENV_private.git  $serverENV/serverENV_private
 git clone https://github.com/hyliang96/sublimy-vim.git  $shareENV/app_config/vim
 
 # 从https换成ssh的url，方便之后免密push和pull
-cd /home/${USER}
+cd "$install_path"
 if [[ "$(git remote show origin)" =~ 'hyliang96/system-template.git' ]]; then
     git remote set-url origin git@github.com:hyliang96/system-template.git
 fi
@@ -48,35 +43,16 @@ git remote set-url origin git@github.com:hyliang96/admin_tool.git
 cd $install_path
 
 # 创建ssh密钥
-mkdir ~/.ssh
-chmod 700 ~/.ssh
-ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
+mkdir -p $install_path/ENV/CONF/.ssh
+chmod 700 $install_path/ENV/CONF/.ssh
+if [ ! -f $install_path/ENV/CONF/.ssh/id_rsa ]; then
+    ssh-keygen -b 2048 -t rsa -f $install_path/ENV/CONF/.ssh/id_rsa -q -N ""
+fi
 # 将github的公钥添加到本地
-ssh-keyscan -t rsa -H github.com >> ~/.ssh/known_hosts
-
-
-.  $install_path/ENV/CONF/.zshenv
-# 安装vim 插件
-# vim +PlugInstall +qall
-
-# 安装vim插件
-vim -u ~/.vimrc.bundles +'PlugInstall --sync' +'PlugUpdate' +qa
-# nvim  -u ~/.vimrc.bundles  +'PlugInstall --sync' +'PlugUpdate' +qa
-# 会自动安装各个插件，其中YouCompleteMe需要编译，会自动完成，编译无需sudo权限
-# 编译nvim的YouCompleteMe, 不需要事先安装nvim的python支持 `pip install pynvim`
-    # 编译无需此python支持，但使用YouCompleteMe需要
-# 其编译依赖：cmake，build-essential，python-dev
-    # 若缺，可根据报错情管理员安装之
-    # sudo apt-get install cmake
-    # sudo apt-get install build-essential
-    # sudo apt-get install python python-dev
-    # 然后删除~/.vim/plugged/YouCompleteMe/ 文件夹,
-    # 重新执行 `vim +PlugInstall +qall`或 `$install_path/ENV/serverENV/nvim/usr/bin/nvim  +'PlugInstall --sync' +'PlugUpdate' +qa`，以编译YouCompleteMe
+ssh-keyscan -t rsa -H github.com >> $install_path/ENV/CONF/.ssh/known_hosts
 
 unset -v here
 
 
 
-# 初次登录zsh以便安装zsh
-zsh
 
