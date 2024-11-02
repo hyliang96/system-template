@@ -128,9 +128,9 @@ bash /home/$USER/init_script/software.sh
 ```
 
 运行时需要选择模式：
-    default: 只安装vim插件、切换默认shell为zsh, 如用于搭建科学上网的vps
-    cpu: 用于科学计算，安装default模式的软件 和anaconda、jupyter
-    gpu: 用于深度学习，安装cpu模式的软件 和torch, tensorflow
+* default: 只安装vim插件、切换默认shell为zsh, 如用于搭建科学上网的vps
+* cpu: 用于科学计算，安装default模式的软件 和anaconda、jupyter
+* gpu: 用于深度学习，安装cpu模式的软件 和torch, tensorflow
 
 * 如果vim中的YouCompleteMe用不了，就得自己手动编译
 
