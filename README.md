@@ -97,7 +97,9 @@ HOME不为/home/$USER时，请修改install_path和my为HOME的实际值。
 * `init_script/install_path.sh` : 默认 `install_path=/home/${USER}`
 * `ENV/CONF/.env` : 默认 `my=/home/$USER`
 
-#### 安装系统级别的软件：请使用sudo运行，以安装各种依赖软件
+#### sudo安装系统级别的软件
+
+请使用sudo运行，以安装各种依赖软件
 
 ```bash
 sudo bash /home/$USER/init_script/sudo_install.sh
