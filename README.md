@@ -85,9 +85,9 @@ ls -d1 /home/$USER/{*,.*}  | grep -vE '/[\.]{1,2}$' | xargs rm -rf
 HOME不为/home/$USER时，请修改下面命令中的/home/$USER为HOME的实际值。
 
 ```bash
-git clone https://github.com/hyliang96/system-template.git /home/$USER
-# rsync -aq --progress /home/$USER/system-template/ /home/$USER
-# cp /home/$USER/system-template/{*,.*} /home/$USER -r
+git clone https://github.com/hyliang96/system-template.git /home/$USER/system-template
+rsync -aq --progress /home/$USER/system-template/ /home/$USER
+rm -rf /home/$USER/system-template
 ```
 
 #### 修改安装路径
