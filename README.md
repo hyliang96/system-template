@@ -80,59 +80,65 @@ ls -d1 /home/$USER/{*,.*}  | grep -vE '/[\.]{1,2}$' | xargs rm -rf
 
 ### 安装
 
-* 下载本repo
+#### 下载本repo
 
-   HOME不为/home/$USER时，请修改下面命令中的/home/$USER为HOME的实际值。
-   ```bash
-   git clone https://github.com/hyliang96/system-template.git /home/$USER
-   # rsync -aq --progress /home/$USER/system-template/ /home/$USER
-   # cp /home/$USER/system-template/{*,.*} /home/$USER -r
-   ```
+HOME不为/home/$USER时，请修改下面命令中的/home/$USER为HOME的实际值。
 
-* 修改安装路径
+```bash
+git clone https://github.com/hyliang96/system-template.git /home/$USER
+# rsync -aq --progress /home/$USER/system-template/ /home/$USER
+# cp /home/$USER/system-template/{*,.*} /home/$USER -r
+```
 
-   HOME不为/home/$USER时，请修改install_path和my为HOME的实际值。
-   * `init_script/install_path.sh` : 默认 `install_path=/home/${USER}`
-   * `ENV/CONF/.env` : 默认 `my=/home/$USER`
+#### 修改安装路径
 
-*   安装系统级别的软件：请使用sudo运行，以安装各种依赖软件
+HOME不为/home/$USER时，请修改install_path和my为HOME的实际值。
 
-   ```bash
-   sudo bash /home/$USER/init_script/sudo_install.sh
-   ```
-   
-   >   debug时, 可能需要删除上面安装的所有apt软件：【小心使用】
-   >
-   >   ```bash
-   >   sudo apt remove tmux netcat-traditional python python3 python3-pip neovim build-essential cmake python-dev python3-dev lua5.3 tightvncserver xfce4 xfce4-goodies powerline fonts-powerline ttf-wqy-zenhei autocutsel fcitx-googlepinyin
-   >   sudo apt --purge autoremove
-   >   ```
+* `init_script/install_path.sh` : 默认 `install_path=/home/${USER}`
+* `ENV/CONF/.env` : 默认 `my=/home/$USER`
 
-*   安装用户级别的环境
+#### 安装系统级别的软件：请使用sudo运行，以安装各种依赖软件
 
-   ```bash
-   bash /home/$USER/init_script/install_sys.sh
-   ```
-   *   文件组织、符号链接
-   *   shell的dotfiles、zsh/bash/git/tmux/ipython/jupyter/vim的配置
-   *   科学上网的服务端和客户端
-   *   登录登出同步共享文件的脚本
+```bash
+sudo bash /home/$USER/init_script/sudo_install.sh
+```
 
-* 安装用户级别的软件
+>   debug时, 可能需要删除上面安装的所有apt软件：【小心使用】
+>
+>   ```bash
+>   sudo apt remove tmux netcat-traditional python python3 python3-pip neovim build-essential cmake python-dev python3-dev lua5.3 tightvncserver xfce4 xfce4-goodies powerline fonts-powerline ttf-wqy-zenhei autocutsel fcitx-googlepinyin
+>   sudo apt --purge autoremove
+>   ```
 
-   ```bash
-   bash /home/$USER/init_script/software.sh
-   ```
-   运行时需要选择模式：
-   * default: 只安装vim插件、切换默认shell为zsh, 如用于搭建科学上网的vps
-   * cpu: 用于科学计算，安装default模式的软件 和anaconda、jupyter
-   * gpu: 用于深度学习，安装cpu模式的软件 和torch, tensorflow
+#### 安装用户级别的环境
 
-* 如果vim中的YouCompleteMe用不了，就得自己手动编译
+```bash
+bash /home/$USER/init_script/install_sys.sh
+```
 
-   ```bash
-   python3 $shareENV/app_config/vim/.vim/plugged/YouCompleteMe/install.py
-   ```
+*   文件组织、符号链接
+*   shell的dotfiles、zsh/bash/git/tmux/ipython/jupyter/vim的配置
+*   科学上网的服务端和客户端
+*   登录登出同步共享文件的脚本
+
+#### 安装用户级别的软件
+
+```bash
+bash /home/$USER/init_script/software.sh
+```
+
+运行时需要选择模式：
+* default: 只安装vim插件、切换默认shell为zsh, 如用于搭建科学上网的vps
+* cpu: 用于科学计算，安装default模式的软件 和anaconda、jupyter
+* gpu: 用于深度学习，安装cpu模式的软件 和torch, tensorflow
+
+#### 如果vim中的YouCompleteMe用不了
+
+得自己手动编译
+
+```bash
+python3 $shareENV/app_config/vim/.vim/plugged/YouCompleteMe/install.py
+```
 
 ### github 授权
 
