@@ -116,17 +116,14 @@ sudo bash /home/$USER/init_script/sudo_install.sh
     *   shell的dotfiles、zsh/bash/git/tmux/ipython/jupyter/vim的配置
     *   科学上网的服务端和客户端
     *   登录登出同步共享文件的脚本
-
-```bash
-bash /home/$USER/init_script/install_sys.sh
-```
+   ```bash
+   bash /home/$USER/init_script/install_sys.sh
+   ```
 
 * 安装用户级别的软件：
-
-```bash
-bash /home/$USER/init_script/software.sh
-```
-
+   ```bash
+   bash /home/$USER/init_script/software.sh
+   ```
    运行时需要选择模式：
    * default: 只安装vim插件、切换默认shell为zsh, 如用于搭建科学上网的vps
    * cpu: 用于科学计算，安装default模式的软件 和anaconda、jupyter
