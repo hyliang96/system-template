@@ -81,6 +81,7 @@ ls -d1 /home/$USER/{*,.*}  | grep -vE '/[\.]{1,2}$' | xargs rm -rf
 ### 安装
 
 * 下载本repo
+
    HOME不为/home/$USER时，请修改下面命令中的/home/$USER为HOME的实际值。
    ```bash
    git clone https://github.com/hyliang96/system-template.git /home/$USER
@@ -89,11 +90,13 @@ ls -d1 /home/$USER/{*,.*}  | grep -vE '/[\.]{1,2}$' | xargs rm -rf
    ```
 
 * 修改安装路径
+
    HOME不为/home/$USER时，请修改install_path和my为HOME的实际值。
    * `init_script/install_path.sh` : 默认 `install_path=/home/${USER}`
    * `ENV/CONF/.env` : 默认 `my=/home/$USER`
 
 *   安装系统级别的软件：请使用sudo运行，以安装各种依赖软件
+
    ```bash
    sudo bash /home/$USER/init_script/sudo_install.sh
    ```
@@ -105,7 +108,8 @@ ls -d1 /home/$USER/{*,.*}  | grep -vE '/[\.]{1,2}$' | xargs rm -rf
    >   sudo apt --purge autoremove
    >   ```
 
-*   安装用户级别的环境：
+*   安装用户级别的环境
+
    ```bash
    bash /home/$USER/init_script/install_sys.sh
    ```
@@ -114,7 +118,8 @@ ls -d1 /home/$USER/{*,.*}  | grep -vE '/[\.]{1,2}$' | xargs rm -rf
    *   科学上网的服务端和客户端
    *   登录登出同步共享文件的脚本
 
-* 安装用户级别的软件：
+* 安装用户级别的软件
+
    ```bash
    bash /home/$USER/init_script/software.sh
    ```
@@ -124,6 +129,7 @@ ls -d1 /home/$USER/{*,.*}  | grep -vE '/[\.]{1,2}$' | xargs rm -rf
    * gpu: 用于深度学习，安装cpu模式的软件 和torch, tensorflow
 
 * 如果vim中的YouCompleteMe用不了，就得自己手动编译
+
    ```bash
    python3 $shareENV/app_config/vim/.vim/plugged/YouCompleteMe/install.py
    ```
