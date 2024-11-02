@@ -118,8 +118,8 @@ sudo bash /home/$USER/init_script/sudo_install.sh
 bash /home/$USER/init_script/install_sys.sh
 ```
 
-*   文件组织、符号链接
-*   shell的dotfiles、zsh/bash/git/tmux/ipython/jupyter/vim的配置
+*   文件组织结构、符号链接
+*   zsh/bash/git/tmux/ipython/jupyter/vim的配置
 *   科学上网的服务端和客户端
 *   登录登出同步共享文件的脚本
 
