@@ -28,3 +28,19 @@ fi
 #  acme: v2ray七合一 一键脚本用来更新证书的工具
 # 七合一脚本 (https://github.com/mack-a/v2ray-agent)
 # . "/home/$USER/ENV/CONF/.acme.sh/acme.sh.env"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/mnt/vepfs/home/lianghaoyu/ENV/localENV/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/mnt/vepfs/home/lianghaoyu/ENV/localENV/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/mnt/vepfs/home/lianghaoyu/ENV/localENV/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/mnt/vepfs/home/lianghaoyu/ENV/localENV/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

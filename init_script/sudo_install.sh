@@ -21,6 +21,7 @@ apt -y purge needrestart
 # 以下软件系统没预装的话就装一个
 apt -y install git
 apt -y install zsh
+# 若无sudo权限，就在安装conda后执行： conda install conda-forge::zsh
 apt -y install tmux
 # 安装nc
 apt -y install netcat-traditional
@@ -36,7 +37,7 @@ apt -y install neovim
 # 安装neovim的python依赖
 apt -y install python3
 apt -y install python3-pip
-sudo pip3 install pynvim # neovim is renamed as pynvim
+sudo pip3 install pynvim # pip package `neovim` is renamed as `pynvim`
 
 # 设置python和pip的链接
 [ ! -f /usr/bin/python ] && ln -s /usr/bin/python3 /usr/bin/python
@@ -45,16 +46,19 @@ sudo pip3 install pynvim # neovim is renamed as pynvim
 # YouCompleteMe 的依赖 如下
 # apt -y install python3 # python2,3 都装了
 apt -y install build-essential cmake python3-dev
+# 若无sudo权限，就在安装conda后执行： conda install anaconda::cmake
 
 # 编译 fuzzyMatchC 的依赖: 不需要再装python和python-dev了，因为上面装过python3和python3-dev了
 # apt -y install python python-dev
 
 # 安装 rg
 apt -y install ripgrep
+# 若无sudo权限，就在安装conda后执行： conda install conda-forge::ripgrep
 
 # -------------------------------------------------------------------------
 # zlua 的依赖
 apt -y install lua5.3
+# 若无sudo权限，就在安装conda后执行： conda install conda-forge::lua
 
 # git的文本界面
 # apt -y install tig

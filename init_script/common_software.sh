@@ -10,6 +10,11 @@ cd $here
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -p $install_path/ENV/localENV/anaconda3 -b
 
+# 若在墙内就启用tuna一键换源的脚本：目前支持更改下列软件的配置，将其直接指向 TUNA 镜像站: conda, Homebrew, PyPI(即pip源), TeX Live (by tlmgr), Arch Linux, CTAN, Debian, Ubuntu, CentOS, AOSC OS
+if [ "$(timeout 5 curl -s www.google.com)" = '' ]; then
+    wget --no-check-certificate -O - https://tuna.moe/oh-my-tuna/oh-my-tuna.py | python -- -
+fi
+
 # 安装notebook的配色
 # conda install -c conda-forge jupyterthemes
 
