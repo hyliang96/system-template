@@ -48,7 +48,6 @@ if [ $mode = cpu ] || [ $mode = gpu ]; then
 
     pip install jupyter
     pip install jupyterthemes
-    pip install shadowsocks
     mkdir ${install_path}/ENV/localENV/log/{polipo,shadowsocks}
     # 安装neovim的python支持
     pip install pynvim # neovim is already renamed as pynvim
@@ -63,6 +62,9 @@ if [ $mode = gpu ] then
     pip install tensorflow
 fi
 
+
+# 安装梯子
+# pip install shadowsocks
 
 # 安装vim 插件
 # vim +PlugInstall +qall
